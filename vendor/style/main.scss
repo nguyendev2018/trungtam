@@ -599,7 +599,9 @@ h4 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    h3 {
+        padding: 0px;
+    }
     .container {
         max-width: 1200px;
         margin-left: auto;
@@ -610,7 +612,7 @@ h4 {
 
     &__top {
         padding: 30px 0;
-        background: rgba(0, 0, 0, .25);
+        background: #016fc7;
         color: #fff;
     }
 
@@ -755,6 +757,7 @@ h4 {
     cursor: pointer;
     outline: none;
     color: #fff;
+    background: #016fc7;
     border: none;
     font-size: 14px;
     max-width: 150px;
@@ -763,10 +766,9 @@ h4 {
     text-align: center;
     &.btn-filter {
         background: #00acf0be;
-
-        &:hover {
-            background: #009edc63;
-        }
+    }
+    &:hover {
+        background: #00acf050;
     }
 }
 
@@ -1097,6 +1099,7 @@ h4 {
     border: none;
     background: #ffffffc2;
     transition: all .3s;
+    box-shadow: 5px 2px 6px #0000004d;
 
     &:hover {
         background: #fff;

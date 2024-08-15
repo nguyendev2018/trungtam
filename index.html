@@ -260,7 +260,7 @@
                           class="form-group  search-group_float__item search-group_float__select nganhnghe"
                         >
                           <select
-                            class="form-control select2 vieclam-select2 rounded-0 transition-03"
+                            class="form-control select2 vieclam-select2"
                             multiple=""
                             data-wrapper=""
                             name="searchNN"
@@ -271,33 +271,7 @@
                             <option class="option-items " value="-1">
                               Ngành nghề
                             </option>
-                            <option class="option-items " value="24">
-                              Kinh doanh
-                            </option>
-                            <option class="option-items " value="10">
-                              Tư vấn 
-                            </option>
-                            <option class="option-items " value="38">
-                              Kiểm toán
-                            </option>
-                            <option class="option-items " value="24">
-                              Du lịch
-                            </option>
-                            <option class="option-items " value="10">
-                              CNTT Phần mềm
-                            </option>
-                            <option class="option-items " value="38">
-                              Giải trí
-                            </option>
-                            <option class="option-items " value="24">
-                              Thực phẩm
-                            </option>
-                            <option class="option-items " value="10">
-                              Điện tử
-                            </option>
-                            <option class="option-items " value="38">
-                              Giải trí 
-                            </option>
+                          
                             <option class="option-items " value="24">
                               Bảo vệ
                             </option>
@@ -1576,127 +1550,10 @@
     </div>
       
     </body>
+    <script src="vendor/js/library/lib-slick.js"></script>
+    <script src="vendor/js/slick.js"></script> 
     <script src="vendor/js/library/jquery.js"></script>
     <script src="vendor/js/library/select2.js"></script>
     <script src="vendor/js/main.js"></script>
-    <script src="vendor/js/library/slick.js"></script>
-  <script>
-      $('.employer-list').slick({
-              arrows: true,
-              autoplay : true,
-              prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-              nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
-      });
-      
-      $('.video-class').slick({
-              arrows: true,
-              // autoplay : true,
-              prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-              nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
-      });
-      $('.hot-list').slick({
-              arrows: true,
-              // autoplay : true,
-              prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-              nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
-      });
-      $('.hot-list--small').slick({
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              arrows: true,
-              autoplay : true,
-              prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-              nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>",
-              responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-        }
-      },{
-        breakpoint: 552,
-        settings: {
-          slidesToShow: 2,
-        }
-      }]
-      });
-      $('.qc2-list').slick({
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              arrows: true,
-              // autoplay : true,
-              prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-              nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>",
-              responsive: [
-     {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 3,
-        }
-      },{
-        breakpoint: 552,
-        settings: {
-          slidesToShow: 2,
-        }
-      }
-      ]
-      });
-      $('.business-list').slick({
-              slidesToShow: 5,
-              slidesToScroll: 1,
-              arrows: true,
-              // autoplay : true,
-              prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-              nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>",
-              responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 4,
-        }
-      },{
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 3,
-        }
-      },{
-        breakpoint: 552,
-        settings: {
-          slidesToShow: 2,
-        }
-      }
-      ]
-      });
-      $('.video-main').slick({
-              slidesToShow: 6,
-              slidesToScroll: 1,
-              // arrows: true,
-              // autoplay : true,
-              prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-              nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>",
-              responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 5,
-        }
-      },{
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 3,
-        }
-      },{
-        breakpoint: 552,
-        settings: {
-          slidesToShow: 2,
-        }
-      },,{
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-      ]
-      });
-    </script>
+ 
   </html>
