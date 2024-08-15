@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("myModal");
   const span = document.getElementsByClassName("close")[0];
 
-  // setTimeout(function () {
-  //   modal.classList.add("show");
-  //   body.classList.add("no-scroll");
-  //   overlayBlack.classList.add("active");
-  // }, 1000);
+  setTimeout(function () {
+    modal.classList.add("show");
+    body.classList.add("no-scroll");
+    overlayBlack.classList.add("active");
+  }, 1000);
 
   span.onclick = function () {
     closeModal();
@@ -62,13 +62,13 @@ buttonsMore.forEach((btnMore, index) => {
   });
 });
 // scroll header
-// document.addEventListener("scroll", () => {
-//   if (window.scrollY > 400) {
-//     menuHeader.classList.add("header-bottom__scroll");
-//   } else {
-//     menuHeader.classList.remove("header-bottom__scroll");
-//   }
-// });
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    menuHeader.classList.add("header-bottom__scroll");
+  } else {
+    menuHeader.classList.remove("header-bottom__scroll");
+  }
+});
 videoList.forEach(video => {
   
   video.onclick = () =>{
