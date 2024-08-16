@@ -2582,7 +2582,11 @@ h4 {
         flex-wrap: wrap;
         row-gap: 4px;
     }
-
+    .header-bottom{
+        .list-menu__dirc{
+            width: 250px;
+        }
+    }
     .header-form {
         .search-inner{
             &__filter{

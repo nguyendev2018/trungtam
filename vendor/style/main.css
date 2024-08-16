@@ -3003,6 +3003,9 @@ h4 {
         flex-wrap: wrap;
     row-gap: 4px;
   }
+  .header-bottom .list-menu__dirc {
+    width: 250px;
+  }
   .header-form .search-inner__filterCol:first-child {
     max-width: 100%;
     -webkit-box-flex: 0;
