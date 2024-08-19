@@ -12,10 +12,9 @@ $('.video-class').slick({
     nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
 });
 $('.hot-list').slick({
-    arrows: true,
-    // autoplay : true,
-    prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-    nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
+    arrows: false,
+    autoplay : true,
+    autoplaySpeed: 2000,
 });
 $('.hot-list--small').slick({
     slidesToShow: 4,

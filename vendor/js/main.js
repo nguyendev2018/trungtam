@@ -1,16 +1,15 @@
-const barsMenu = document.querySelector(".list-menu__bars");
-const menuMobile = document.querySelector(".list-menu__dirc")
+const barsMenu = document.querySelector(".navbar-toggle");
+const menuMobile = document.querySelector(".navbar-menu")
 const body = document.querySelector("body");
 const overlayBlack = document.querySelector(".overlay-black");
 const menuHeader = document.querySelector(".header-bottom");
 const videoList = document.querySelectorAll(".video-small");
 const iframe = document.querySelector(".video iframe");
-
+const scrollUp = document.querySelector(".scroll-up");
 const buttonsMore = document.querySelectorAll(".card-body--more");
 const viewsMore = document.querySelectorAll(".card-body--list.view-more")
 barsMenu.addEventListener("click", () => {
   barsMenu.classList.toggle("active");
-  body.classList.toggle("no-scroll");
   menuMobile.classList.toggle("show");
 });
 
@@ -63,10 +62,12 @@ buttonsMore.forEach((btnMore, index) => {
 // scroll header
 document.addEventListener("scroll", () => {
   if (window.scrollY > 400) {
-    menuHeader.classList.add("header-bottom__scroll");
+    menuHeader.classList.add("header-bottom__scrollY");
+    scrollUp.classList.add('active')
    
   } else {
-    menuHeader.classList.remove("header-bottom__scroll");
+    menuHeader.classList.remove("header-bottom__scrollY");
+    scrollUp.classList.remove('active')
   }
 });
 videoList.forEach(video => {
