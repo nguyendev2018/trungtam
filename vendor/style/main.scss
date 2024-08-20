@@ -253,6 +253,7 @@
             flex-wrap: wrap;
             margin-left: -10px;
             margin-right: -10px;
+            row-gap: 20px;
         }
         &__search {
             max-width: 60%;
@@ -298,9 +299,39 @@
                 justify-content: space-between;
                 padding-left: 10px;
                 padding-right: 10px;
-
+                display: none;
                 i {
                     margin-right: 4px;
+                }
+            }
+            .block-btn {
+                display: flex;
+            }
+            &.btn-filterInfo{
+                padding-left: 10px;
+                padding-right: 10px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .btn-infoJob{
+                    background: #0e81d7;
+                    padding: 10px;
+                    border-radius: 6px;
+                    color: #ffff;
+                    font-size: 13px;
+                    margin-right: 12px;
+                    display: flex;
+                    align-items: center;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    a {
+                        color: #0056B3;
+                        font-size: 14px;
+                        margin-right: 5px;
+                    }
+                  
                 }
             }
         }
@@ -1414,10 +1445,6 @@
                     gap: 12px;
                     margin-top: 12px;
                 }
-                &__title {
-                    font-size: 20px;
-                    letter-spacing: 0;
-                }
                 &__divider{
                     display: none;
                 }
@@ -1460,7 +1487,6 @@
             &__search {
                 max-width: 100%;
                 flex: 0 0 100%;
-                margin-bottom: 10px;
                 &Col{
                     &:first-child,&:last-child{
                         max-width: 50%;
@@ -1471,7 +1497,6 @@
             &__filter{
                 max-width: 100%;
                 flex: 0 0 100%;
-                margin-bottom: 20px;
                 &Col{
                     &:first-child, &:last-child{
                         max-width: 50%;
@@ -1749,6 +1774,24 @@
                 grid-template-columns: repeat(1, 1fr);
             }
         }
+        &-form{
+            .search-inner__filterCol{
+                &:last-child{
+                    display: none
+                }
+                &:first-child{
+                    display: block;
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                }
+            }
+            .search-inner__item.btn-filterSearch{
+                display: flex;
+            }
+        }
+    }
+    .header-form .search-inner__item.btn-filterInfo{
+        display: none;
     }
 }
 

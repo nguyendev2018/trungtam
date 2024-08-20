@@ -8,6 +8,8 @@ const iframe = document.querySelector(".video iframe");
 const scrollUp = document.querySelector(".scroll-up");
 const buttonsMore = document.querySelectorAll(".card-body--more");
 const viewsMore = document.querySelectorAll(".card-body--list.view-more")
+const btnFilter  = document.querySelectorAll("#btn-filter");
+
 barsMenu.addEventListener("click", () => {
   barsMenu.classList.toggle("active");
   menuMobile.classList.toggle("show");
@@ -100,19 +102,13 @@ $(document).ready(function () {
       minimumResultsForSearch: 10,
     });
   });
-  function checkScreenWidth() {
-    if ($(window).width() < 552) {
-      $(".collapse-filter").attr("id", "collapse-btn");
-    }
-    else {
-      $(".collapse-filter").removeAttr("id");
-    }
-  }
-  checkScreenWidth();
-  $(window).resize(function () {
-    checkScreenWidth();
-  });
-  $("#btn-filter").click(function () {
-    $("#collapse-btn").toggleClass("active"); // toggle collapse
-  });
+
+  const btnFilter = document.querySelectorAll("#btn-filter");
+
+btnFilter.forEach(element => {    
+    element.addEventListener("click", function () {
+      document.querySelector("#collapse-btn").classList.toggle("active"); // toggle collapse
+    });
+});
+
 });

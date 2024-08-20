@@ -289,6 +289,19 @@ h4 {
   display: block !important;
 }
 
+.hidden-tablet {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .show-tablet {
+    display: none !important;
+  }
+  .hidden-tablet {
+    display: block !important;
+  }
+}
+
 .header-title {
   font-size: 28px;
   font-family: Roboto-Bold;
@@ -1163,6 +1176,7 @@ h4 {
       flex-wrap: wrap;
   margin-left: -10px;
   margin-right: -10px;
+  row-gap: 20px;
 }
 
 .header-form .search-inner__search {
@@ -1231,10 +1245,56 @@ h4 {
           justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
+  display: none;
 }
 
 .header-form .search-inner__item.btn-filterSearch i {
   margin-right: 4px;
+}
+
+.header-form .search-inner__item .block-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-form .search-inner__item.btn-filterInfo {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-form .search-inner__item.btn-filterInfo .btn-infoJob {
+  background: #0e81d7;
+  padding: 10px;
+  border-radius: 6px;
+  color: #ffff;
+  font-size: 13px;
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-form .search-inner__item.btn-filterInfo .btn-infoJob:hover {
+  opacity: 0.8;
+}
+
+.header-form .search-inner__item.btn-filterInfo .btn-infoJob a {
+  color: #0056B3;
+  font-size: 14px;
+  margin-right: 5px;
 }
 
 .header-form .search-inner .form-group:before {
@@ -2628,10 +2688,6 @@ h4 {
     gap: 12px;
     margin-top: 12px;
   }
-  .header-search .job-market__title {
-    font-size: 20px;
-    letter-spacing: 0;
-  }
   .header-search .job-market__divider {
     display: none;
   }
@@ -2672,7 +2728,6 @@ h4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    margin-bottom: 10px;
   }
   .header-form .search-inner__searchCol:first-child, .header-form .search-inner__searchCol:last-child {
     max-width: 50%;
@@ -2685,7 +2740,6 @@ h4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    margin-bottom: 20px;
   }
   .header-form .search-inner__filterCol:first-child, .header-form .search-inner__filterCol:last-child {
     max-width: 50%;
@@ -2905,6 +2959,24 @@ h4 {
   .header-search__list {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+  .header-form .search-inner__filterCol:last-child {
+    display: none;
+  }
+  .header-form .search-inner__filterCol:first-child {
+    display: block;
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .header-form .search-inner__item.btn-filterSearch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-form .search-inner__item.btn-filterInfo {
+    display: none;
   }
 }
 
