@@ -4,7 +4,7 @@
 @import '../scss/components/header';
 @import '../scss/components/footer';
 @import '../scss/components/navbar';
-
+@import '../scss/layout/recruitment';
 .entry-title{
     color: #000;
    overflow: hidden;
@@ -254,6 +254,9 @@
             margin-left: -10px;
             margin-right: -10px;
             row-gap: 20px;
+            @media screen and(max-width: 552px) {
+                row-gap: 10px;
+            }
         }
         &__search {
             max-width: 60%;
@@ -667,7 +670,7 @@
     
         border-bottom: 2px solid rgba(0, 0, 0, .125);
         transition: all .4s;
-     
+        
         .card-item{
             padding: 15px 8px;
             border: 1px solid #0000004f;

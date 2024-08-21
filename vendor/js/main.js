@@ -9,7 +9,8 @@ const scrollUp = document.querySelector(".scroll-up");
 const buttonsMore = document.querySelectorAll(".card-body--more");
 const viewsMore = document.querySelectorAll(".card-body--list.view-more")
 const btnFilter  = document.querySelectorAll("#btn-filter");
-
+const tabButtons = document.querySelectorAll('.recruitment-option');
+const tabContents = document.querySelectorAll('.recruitment .card-body');
 barsMenu.addEventListener("click", () => {
   barsMenu.classList.toggle("active");
   menuMobile.classList.toggle("show");
@@ -112,3 +113,42 @@ btnFilter.forEach(element => {
 });
 
 });
+
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Hide all tab contents
+      tabContents.forEach(content => content.style.display = 'none');
+
+      // Remove 'active' class from all buttons
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+
+      // Show the clicked tab content and add 'active' class
+      const nameCard = button.getAttribute('data-id');
+      document.getElementById(nameCard).style.display = 'block';
+      button.classList.add('active');
+    });
+  });
+   // JavaScript để xử lý load item
+   let items = document.querySelectorAll('.recruitment .card-item');
+   let loadMoreBtn = document.getElementById('loadMoreBtn');
+   let currentIndex = 0;
+   const itemsPerPage = 5;
+
+   function loadItems() {
+       for (let i = currentIndex; i < currentIndex + itemsPerPage && i < items.length; i++) {
+           items[i].style.display = 'list-item';
+       }
+       currentIndex += itemsPerPage;
+
+       // Ẩn nút "Load More" nếu đã load hết item
+       if (currentIndex >= items.length) {
+           loadMoreBtn.style.display = 'none';
+       }
+   }
+
+   // Load 5 item đầu tiên khi trang load
+   loadItems();
+
+   // Khi nhấn nút "Load More" thì load thêm item
+   loadMoreBtn.addEventListener('click', loadItems);
