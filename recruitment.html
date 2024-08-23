@@ -1,1284 +1,1693 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuyển dụng</title>
-    <link rel="icon" type="image/x-icon" href="vendor/images/favicon.ico" /> 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
-    
-    <link rel="stylesheet" type="text/css" href="vendor/style/slick.css"/> 
-    <link rel="stylesheet" href="vendor/style/search.css"> 
-    <link rel="stylesheet" href="vendor/style/main.css" />
-    <link rel="stylesheet" href="vendor/js/main.js" />  
-</head>
-<body>
-    <section class="header">
-        <div class="header-top">
-          <div class="header-container">
-            <div class="header-left header-spacing">
-              <a class="header-left__link" href="tel:(0274) 3.899.019">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tuyển dụng</title>
+      <link rel="icon" type="image/x-icon" href="vendor/images/favicon.ico" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+      <link rel="stylesheet" type="text/css" href="vendor/style/slick.css"/>
+      <link rel="stylesheet" href="vendor/style/search.css">
+      <link rel="stylesheet" href="vendor/style/main.css" />
+      <link rel="stylesheet" href="vendor/js/main.js" />
+   </head>
+   <body>
+      <!-- <div id="preloader-active">
+         <div class="preloader">
+         <div class="preloader-inner">
+         <div class="preloader-circle"></div>
+         <div class="preloader-img pere-text">
+         <img src="vendor/images/Logo.png" alt="Logo Loader">
+         </div>
+         </div>
+         </div>
+         </div> -->
+      <a href="#" class="scroll-up">
+      <i class="bi bi-chevron-up"></i>
+      </a>
+      <div class="header">
+         <div class="header-top">
+            <div class="header-container">
+               <div class="header-left header-spacing">
+                  <a class="header-left__link" href="tel:(0274) 3.899.019">
                   <i class="bi bi-telephone"></i>
                   <span>(0274) 3.899.019</span>
-              </a>
-              <a class="header-left__link" href="mailto:cantho@vietnamhr.vn" >
-                <i class="bi bi-envelope-at"></i>
-                <span>phonggtvlbd@gmail.com</span>
-              </a>
+                  </a>
+                  <a class="header-left__link" href="mailto:cantho@vietnamhr.vn" >
+                  <i class="bi bi-envelope-at"></i>
+                  <span>phonggtvlbd@gmail.com</span>
+                  </a>
+               </div>
+               <div class="header-right">
+                  <div class="header-right__auth header-spacing">
+                     <a href="#dangnhap">
+                     <i class="bi bi-box-arrow-in-right"></i>
+                     <span>Đăng nhập</span>
+                     </a>
+                     <a href="#dangky">
+                     <i class="bi bi-person"></i>
+                     <span>Đăng ký</span>
+                     </a>
+                  </div>
+                  <div class="header-right__flag header-spacing">
+                     <div class="flag-lag">
+                        <img src="vendor/images/flag-vietnam.png" alt="Tiếng Việt" />
+                     </div>
+                     <div class="flag-lag">
+                        <img src="vendor/images/flag-english.png" alt="Tiếng Anh" />
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="header-right">
-              <div class="header-right__auth header-spacing">
-                <a href="#dangnhap">
-                  <i class="bi bi-box-arrow-in-right"></i>
-                  <span>Đăng nhập</span>
-                </a>
-                <a href="#dangky">
-                  <i class="bi bi-person"></i>
-                  <span>Đăng ký</span>
-                </a>
-              </div>
-              <div class="header-right__flag header-spacing">
-                <div class="flag-lag">
-                  <img src="vendor/images/flag-vietnam.png" alt="Tiếng Việt" />
-                </div>
-                <div class="flag-lag">
-                  <img src="vendor/images/flag-english.png" alt="Tiếng Anh" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header-bottom container">
-          <a class="header-logo">
+         </div>
+         <div class="header-bottom container">
+            <a href="#" class="header-logo">
             <img
-              src="vendor/images/Logo.png"
-              alt="Trung Tâm Dịch Vụ Việc Làm Bình Dương" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
-            />
-          </a>
-          <div class="navbar">
-            <div class="navbar-toggle">
-              <div class="navbar-bars"></div>
-            </div>
-            <div class="navbar-menu">
-              <div class="navbar-header">
-                <a href="#">
-                  <img src="vendor/images/Logo.png" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG" alt="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG">
-                </a>
-            
-              </div>
-              <a class="navbar-item" href="/Home">
-                <img
-                  src="vendor/images/header-bottom/icon-home.png"
-                  class="navbar-icon"
-                  alt="Trang Chủ"
-                />
-                <i class="bi bi-chevron-right"></i>
-                Trang Chủ
-              </a>
-              <a class="navbar-item" href="/Ung-Vien" id="CanMenu">
-                <img
-                  src="vendor/images/header-bottom/icon-vieclam.png"
-                  class="navbar-icon"
-                  alt="Người Tìm Việc"
-                />
-                <i class="bi bi-chevron-right"></i>
-                Người Tìm Việc
-              </a>
-              <a class="navbar-item" href="/Gioi-Thieu">
-                <img
-                  src="vendor/images/header-bottom/icon-timviec.png"
-                  class="navbar-icon"
-                  alt="Giới Thiệu"
-                />
-                <i class="bi bi-chevron-right"></i>
-                Giới Thiệu
-              </a>
-              <a class="navbar-item" href="/Tuyen-Dung" id="JobMenu">
-                <img
-                  src="vendor/images/header-bottom/icon-job.png"
-                  class="navbar-icon"
-                  alt="Tuyển Dụng"
-                />
-                <i class="bi bi-chevron-right"></i>
-                Tuyển Dụng
-              </a>
-              <a
-                class="navbar-item"
-                title="Sàn online là tính năng mới để kết nối NLD và DN. Bạn sẻ được chat trực tiếp với ứng viên hoặc doanh nghiệp"
-              >
-                <img
-                  src="vendor/images/header-bottom/icon-sanonline.jpg"
-                  class="navbar-icon"
-                  alt="Sàn Oline"
-                />
-                <i class="bi bi-chevron-right"></i>
-                Sàn Online
-              </a>
-              <a class="navbar-item" href="/Van-Ban">
-                <img
-                  src="vendor/images/header-bottom/icon-book.png"
-                  class="navbar-icon"
-                  alt="Văn Bản"
-                />
-                <i class="bi bi-chevron-right"></i>
-                Văn Bản
-              </a>
-              <a class="navbar-item" href="/News/NewsByCategory/3330">
-                <img
-                  src="vendor/images/header-bottom/icon-hanhchinh.png"
-                  class="navbar-icon"
-                  alt="TT Hành Chính"
-                />
-                <i class="bi bi-chevron-right"></i>
-                TT Hành Chính
-              </a>
-              <a class="navbar-item" href="/Tin-Tuc" id="NewsMenu">
-                <img
-                  src="vendor/images/header-bottom/icon-news.png"
-                  alt="Tin Tức"
-                  class="navbar-icon"
-                />
-                <i class="bi bi-chevron-right"></i>
-                Tin Tức
-              </a>
-              <a
-                class="navbar-item navbar-item--sign"
-                href="/Tin-Tuc"
-                id="NewsMenu"
-              >
-              <i class="bi bi-chevron-right"></i>
-                Đăng nhập
-              </a>
-              <a
-                class="navbar-item navbar-item--sign"
-                href="/Tin-Tuc"
-                id="NewsMenu"
-              >
-              <i class="bi bi-chevron-right"></i>
-                Đăng ký
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="header-search">
-          <div class="header-search__top">
-            <div class="container">
-              <div class="header-search__list">
-                <div class="header-search__item">
-                  <h1 class="header-title">VIỆC LÀM BÌNH DƯƠNG</h1>
-                  <h2 class="header-subTitle">
-                    <i>Sàn Giao Dịch Việc Làm Tại Bình Dương</i>
-                  </h2>
-                </div>
-                <div class="header-search__item">
-                  <div class="job-market">
-                    <div class="job-market__top">
-                      <div class="job-market__title">
-                        <img
-                          src="vendor/images/search.svg"
-                          alt="search"
-                          class="job-market__icon"
-                        />
-                        Thị trường việc làm hôm nay :
-                      </div>
-                      <div class="job-market__date">23/07/2024</div>
-                    </div>
-                    <div class="job-market__bottom">
-                      <h3 class="job-market__item">
-                        <span class="job-market__title">
-                          Việc làm đang tuyển :
-                        </span>
-                        <a href="/viec-lam-moi-nhat" class="job-market__value">
-                          1.432
-                        </a>
-                      </h3>
-                      <div class="job-market__divider"></div>
-                      <h3 class="job-market__item">
-                        <span class="job-market__title">
-                          Việc làm hôm nay :
-                        </span>
-                        <a
-                          href="/viec-lam-can-tho-moi-nhat"
-                          class="job-market__value"
-                        >
-                          26
-                        </a>
-                      </h3>
-                    </div>
+               src="vendor/images/Logo.png"
+               alt="Trung Tâm Dịch Vụ Việc Làm Bình Dương" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
+               />
+            </a>
+            <div class="navbar">
+               <div class="navbar-toggle">
+                  <div class="navbar-bars"></div>
+               </div>
+               <div class="navbar-menu">
+                  <div class="navbar-header">
+                     <a href="#">
+                     <img src="vendor/images/Logo.png" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG" alt="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG">
+                     </a>
                   </div>
-                </div>
-              </div>
+                  <a class="navbar-item" href="/Home">
+                  <img
+                     src="vendor/images/header-bottom/icon-home.png"
+                     class="navbar-icon"
+                     alt="Trang Chủ"
+                     />
+                  <i class="bi bi-chevron-right"></i>
+                  Trang Chủ
+                  </a>
+                  <a class="navbar-item" href="/Ung-Vien" id="CanMenu">
+                  <img
+                     src="vendor/images/header-bottom/icon-vieclam.png"
+                     class="navbar-icon"
+                     alt="Người Tìm Việc"
+                     />
+                  <i class="bi bi-chevron-right"></i>
+                  Người Tìm Việc
+                  </a>
+                  <a class="navbar-item" href="/Gioi-Thieu">
+                  <img
+                     src="vendor/images/header-bottom/icon-timviec.png"
+                     class="navbar-icon"
+                     alt="Giới Thiệu"
+                     />
+                  <i class="bi bi-chevron-right"></i>
+                  Giới Thiệu
+                  </a>
+                  <a class="navbar-item" href="/Tuyen-Dung" id="JobMenu">
+                  <img
+                     src="vendor/images/header-bottom/icon-job.png"
+                     class="navbar-icon"
+                     alt="Tuyển Dụng"
+                     />
+                  <i class="bi bi-chevron-right"></i>
+                  Tuyển Dụng
+                  </a>
+                  <a
+                     class="navbar-item"
+                     title="Sàn online là tính năng mới để kết nối NLD và DN. Bạn sẻ được chat trực tiếp với ứng viên hoặc doanh nghiệp"
+                     >
+                  <img
+                     src="vendor/images/header-bottom/icon-sanonline.jpg"
+                     class="navbar-icon"
+                     alt="Sàn Oline"
+                     />
+                  <i class="bi bi-chevron-right"></i>
+                  Sàn Online
+                  </a>
+                  <a class="navbar-item" href="/Van-Ban">
+                  <img
+                     src="vendor/images/header-bottom/icon-book.png"
+                     class="navbar-icon"
+                     alt="Văn Bản"
+                     />
+                  <i class="bi bi-chevron-right"></i>
+                  Văn Bản
+                  </a>
+                  <a class="navbar-item" href="/News/NewsByCategory/3330">
+                  <img
+                     src="vendor/images/header-bottom/icon-hanhchinh.png"
+                     class="navbar-icon"
+                     alt="TT Hành Chính"
+                     />
+                  <i class="bi bi-chevron-right"></i>
+                  TT Hành Chính
+                  </a>
+                  <a class="navbar-item" href="/Tin-Tuc" id="NewsMenu">
+                  <img
+                     src="vendor/images/header-bottom/icon-news.png"
+                     alt="Tin Tức"
+                     class="navbar-icon"
+                     />
+                  <i class="bi bi-chevron-right"></i>
+                  Tin Tức
+                  </a>
+                  <a
+                     class="navbar-item navbar-item--sign"
+                     href="/Tin-Tuc"
+                     id="NewsMenu"
+                     >
+                  <i class="bi bi-chevron-right"></i>
+                  Đăng nhập
+                  </a>
+                  <a
+                     class="navbar-item navbar-item--sign"
+                     href="/Tin-Tuc"
+                     id="NewsMenu"
+                     >
+                  <i class="bi bi-chevron-right"></i>
+                  Đăng ký
+                  </a>
+               </div>
             </div>
-          </div>
-          <div class="header-form">
-            <div class="search-bar">
-              <form name="frmSearch" id="frmSearch" >
-                <div class="container">
-                  <div class="search-inner">
-                    <div class="search-inner__list">
-                        <div class="search-inner__search search-inner__item  search-group_float">
-                          <div class="search-inner__searchCol">
-                            <div
-                            class="form-group search-group_float__item noidung"
-                          >
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Tiêu đề công việc, vị trí..."
-                              value=""
-                              id="searchStr"
-                            />
-                          </div>
-                          </div>
-                          <div class="search-inner__searchCol">
-                            <div
-                            class="form-group  search-group_float__item search-group_float__select nganhnghe"
-                          >
-                            <select
-                              class="form-control select2 vieclam-select2"
-                              multiple=""
-                              data-wrapper=""
-                              name="searchNN"
-                              id="searchNN"
-                              data-placeholder="Lọc theo ngành nghề"
-                              size="1"
-                            >
-                              <option class="option-items " value="-1">
-                                Ngành nghề
-                              </option>
-                            
-                              <option class="option-items " value="24">
-                                Bảo vệ
-                              </option>
-                              <option class="option-items " value="10">
-                                Hóa học
-                              </option>
-                              <option class="option-items " value="38">
-                                Bất động sản
-                              </option>
-                              <option class="option-items " value="56">
-                                Làm đẹp
-                              </option>
-                            </select>
-                          </div>
-                          </div>
+         </div>
+         <div class="header-search">
+            <div class="header-search__top">
+               <div class="container">
+                  <div class="header-search__list">
+                     <div class="header-search__item">
+                        <h1 class="header-title">VIỆC LÀM BÌNH DƯƠNG</h1>
+                        <h2 class="header-subTitle">
+                           <i>Sàn Giao Dịch Việc Làm Tại Bình Dương</i>
+                        </h2>
+                     </div>
+                     <div class="header-search__item">
+                        <div class="job-market">
+                           <div class="job-market__top">
+                              <div class="job-market__title">
+                                 <img
+                                    src="vendor/images/search.svg"
+                                    alt="search"
+                                    class="job-market__icon"
+                                    />
+                                 Thị trường việc làm hôm nay :
+                              </div>
+                              <div class="job-market__date">23/07/2024</div>
+                           </div>
+                           <div class="job-market__bottom">
+                              <h3 class="job-market__item">
+                                 <span class="job-market__title">
+                                 Việc làm đang tuyển :
+                                 </span>
+                                 <a href="/viec-lam-moi-nhat" class="job-market__value">
+                                 1.432
+                                 </a>
+                              </h3>
+                              <div class="job-market__divider"></div>
+                              <h3 class="job-market__item">
+                                 <span class="job-market__title">
+                                 Việc làm hôm nay :
+                                 </span>
+                                 <a
+                                    href="/viec-lam-can-tho-moi-nhat"
+                                    class="job-market__value"
+                                    >
+                                 26
+                                 </a>
+                              </h3>
+                           </div>
                         </div>
-                        <div class="search-inner__filter search-inner__item filter">
-                            <div class="search-inner__filterCol">
-                              <div
-                              class="form-group search-group_float__item diadiem"
-                            >
-                              <select
-                                class="form-control vieclam-select2 select2"
-                                name=""
-                                multiple=""
-                                data-wrapper=""
-                                id="searchDD"
-                                data-placeholder="Lọc theo địa điểm"
-                                size="1"
-                              >
-                                <option class="option-items " value="-1">
-                                  Địa điểm - Tất cả
-                                </option>
-                                <option class="option-items " value="1">
-                                  Cần Thơ
-                                </option>
-                                <option class="option-items " value="2">
-                                  Vĩnh Long
-                                </option>
-                                <option class="option-items " value="8">
-                                  Hậu Giang
-                                </option>
-                                <option class="option-items " value="71">
-                                  Khác
-                                </option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="search-inner__filterCol">
-                            <button type="submit" class="form-control btn-find btn-primary hidden-sm">
-                              Tìm kiếm
-                            </button>
-                          </div>
-                        </div>
-                        <div class="search-inner__item btn-filterSearch ">        
-                          <div class="form-control btn-find">
-                            <i class="bi bi-search"></i> Tìm kiếm
-                          </div>            
-                        </div>
-                    </div>
-                    </div>
+                     </div>
                   </div>
-                </div>
-                </div>
-          </div>
-    </section>
-    <section class="recruitment job">
-        <div class="container-small">
+               </div>
+            </div>
+            <div class="header-form">
+               <div class="search-bar">
+                  <form name="frmSearch" id="frmSearch" >
+                  <div class="container">
+                     <div class="search-inner">
+                        <div class="search-inner__list">
+                           <div class="search-inner__search search-inner__item  search-group_float">
+                              <div class="search-inner__searchCol">
+                                 <div
+                                    class="form-group search-group_float__item noidung"
+                                    >
+                                    <input
+                                       type="text"
+                                       class="form-control"
+                                       placeholder="Tiêu đề công việc, vị trí..."
+                                       value=""
+                                       id="searchStr"
+                                       />
+                                 </div>
+                              </div>
+                              <div class="search-inner__searchCol">
+                                 <div
+                                    class="form-group  search-group_float__item search-group_float__select nganhnghe"
+                                    >
+                                    <select
+                                       class="form-control select2 vieclam-select2"
+                                       multiple=""
+                                       data-wrapper=""
+                                       name="searchNN"
+                                       id="searchNN"
+                                       data-placeholder="Lọc theo ngành nghề"
+                                       size="1"
+                                       >
+                                       <option class="option-items " value="-1">
+                                          Ngành nghề
+                                       </option>
+                                       <option class="option-items " value="24">
+                                          Bảo vệ
+                                       </option>
+                                       <option class="option-items " value="10">
+                                          Hóa học
+                                       </option>
+                                       <option class="option-items " value="38">
+                                          Bất động sản
+                                       </option>
+                                       <option class="option-items " value="56">
+                                          Làm đẹp
+                                       </option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="search-inner__filter search-inner__item filter">
+                              <div class="search-inner__filterCol">
+                                 <div
+                                    class="form-group search-group_float__item diadiem"
+                                    >
+                                    <select
+                                       class="form-control vieclam-select2 select2"
+                                       name=""
+                                       multiple=""
+                                       data-wrapper=""
+                                       id="searchDD"
+                                       data-placeholder="Lọc theo địa điểm"
+                                       size="1"
+                                       >
+                                       <option class="option-items " value="-1">
+                                          Địa điểm - Tất cả
+                                       </option>
+                                       <option class="option-items " value="1">
+                                          Cần Thơ
+                                       </option>
+                                       <option class="option-items " value="2">
+                                          Vĩnh Long
+                                       </option>
+                                       <option class="option-items " value="8">
+                                          Hậu Giang
+                                       </option>
+                                       <option class="option-items " value="71">
+                                          Khác
+                                       </option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="search-inner__filterCol">
+                                 <button type="submit" class="form-control btn-find btn-primary hidden-sm">
+                                 Tìm kiếm
+                                 </button>
+                              </div>
+                           </div>
+                           <div class="search-inner__item btn-filterSearch ">
+                              <div class="form-control btn-find">
+                                 <i class="bi bi-search"></i> Tìm kiếm
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="recruitment job">
+         <div class="container-small">
             <div class="recruitment-list">
-                <div class="recruitment-content">
-                    <div class="recruitment-title">
-                        <p>Tìm thấy <strong>1553</strong> việc làm mới nhất 2024</p>
-                        <div class="recruitment-blockSelect">
-                            <strong>Sắp xếp theo :</strong>
-                            <div class="recruitment-select">
-                                <div class="recruitment-option active" data-id="dataUpdate">Ngày cập nhật</div>
-                                <div class="recruitment-option" data-id="hot">Hot Nhất</div>
-                                <div class="recruitment-option" data-id="salary">Lương cao</div>
-                            </div>
+               <div class="recruitment-content recruitment-item">
+                  <div class="recruitment-title">
+                     <p>Tìm thấy <strong>1553</strong> việc làm mới nhất 2024</p>
+                     <div class="recruitment-blockSelect">
+                        <strong>Sắp xếp theo :</strong>
+                        <div class="recruitment-select">
+                           <div class="recruitment-option active" data-id="dataUpdate">Ngày cập nhật</div>
+                           <div class="recruitment-option" data-id="hot">Hot Nhất</div>
+                           <div class="recruitment-option" data-id="salary">Lương cao</div>
                         </div>
-                    </div>
-                    <div class="card-body active" id="dataUpdate">
-                        <div class="card-item p-job">
-                              <a href="#" class="item-content">
-                                <div class="item-content--company">
-                                  <div class="flex">
-                                    <div class="avatar">
-                                      <img src="vendor/images/job/1.jpg" alt="">
-                                    </div>
-                                    <div class="title-company">
-                                      <span class="title"> 
-                                        Kế toán tổng hợp
-                                      </span>
-                                      <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="item-content--info">
-                                  <div class="flex">
-                                    <div class="flex-item">
-                                      <i class="bi bi-people-fill"></i>
-                                      <span> <strong>Số lượng :</strong> 1</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-geo-alt"></i>
-                                      <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-clock"></i>
-                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-gender-female"></i>
-                                    <span> <strong>Giới tính :</strong> Nam</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-person-badge"></i>
-                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-arrow-clockwise"></i>
-                                      <span><strong>Vừa đăng:</strong> 10 phút trước</span>
-                                    </div>
-                                  </div>
-                              </div>
-                          </a>
-                        </div>
-                        <div class="card-item p-job">
-                          <a href="#" class="item-content">
-                          
-                            <div class="item-content--company">
+                     </div>
+                  </div>
+                  <div class="card-body active" id="dataUpdate">
+                     <div class="card-item">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
                               <div class="flex">
-                                <div class="avatar">
-                                  <img src="vendor/images/job/2.png" alt="">
-                                </div>
-                                <div class="title-company">
-                                  <span class="title"> 
-                                    Kế toán tổng hợp
-                                  </span>
-                                  <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item-content--info">
-                              <div class="flex">
-                                <div>
-                                  <i class="bi bi-people-fill"></i>
-                                  <span> <strong>Số lượng :</strong> 1</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-geo-alt"></i>
-                                  <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-clock"></i>
-                                <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-gender-female"></i>
-                                <span> <strong>Giới tính :</strong> Nam</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-person-badge"></i>
-                                <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-calendar"></i>
-                                  <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                                </div>
-                              </div>
-                            
-                          </div>
-                          </a>
-                        </div>
-                        <div class="card-item p-job">
-                              
-                          <a href="#" class="item-content">
-                          
-                            <div class="item-content--company">
-                              <div class="flex">
-                                <div class="avatar">
-                                  <img src="vendor/images/Logo.png" alt="">
-                                </div>
-                                <div class="title-company">
-                                  <span class="title"> 
-                                    Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
-                                  </span>
-                                  <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item-content--info">
-                              <div class="flex">
-                                <div>
-                                  <i class="bi bi-people-fill"></i>
-                                  <span> <strong>Số lượng :</strong> 1</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-geo-alt"></i>
-                                  <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-gender-male"></i>
-                                <span> <strong>Giới tính :</strong> Nam</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-person-badge"></i>
-                                <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-clock"></i>
-                                <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-calendar"></i>
-                                  <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                                </div>
-                              </div>
-                          </div>
-                      </a>
-                        </div>
-                        <div class="card-item p-job">
-                            <a href="#" class="item-content">
-                              <div class="item-content--company">
-                                <div class="flex">
-                                  <div class="avatar">
+                                 <div class="avatar">
                                     <img src="vendor/images/job/1.jpg" alt="">
-                                  </div>
-                                  <div class="title-company">
+                                 </div>
+                                 <div class="title-company">
                                     <span class="title"> 
-                                      Kế toán tổng hợp
+                                    Kế toán tổng hợp
                                     </span>
                                     <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                                  </div>
-                                </div>
+                                 </div>
                               </div>
-                              <div class="item-content--info">
-                                <div class="flex">
-                                  <div class="flex-item">
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div class="flex-item">
                                     <i class="bi bi-people-fill"></i>
                                     <span> <strong>Số lượng :</strong> 1</span>
-                                  </div>
-                                  <div class="flex-item">
+                                 </div>
+                                 <div class="flex-item">
                                     <i class="bi bi-geo-alt"></i>
                                     <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                  </div>
-                                  <div class="flex-item">
+                                 </div>
+                                 <div class="flex-item">
                                     <i class="bi bi-clock"></i>
-                                  <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                  </div>
-                                  <div class="flex-item">
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div class="flex-item">
                                     <i class="bi bi-gender-female"></i>
-                                  <span> <strong>Giới tính :</strong> Nam</span>
-                                  </div>
-                                  <div class="flex-item">
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div class="flex-item">
                                     <i class="bi bi-person-badge"></i>
-                                  <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                  </div>
-                                  <div class="flex-item">
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div class="flex-item">
                                     <i class="bi bi-arrow-clockwise"></i>
                                     <span><strong>Vừa đăng:</strong> 10 phút trước</span>
-                                  </div>
-                                </div>
-                            </div>
+                                 </div>
+                              </div>
+                           </div>
                         </a>
-                      </div>
-                      <div class="card-item p-job">
+                     </div>
+                     <div class="card-item ">
                         <a href="#" class="item-content">
-                        
-                          <div class="item-content--company">
-                            <div class="flex">
-                              <div class="avatar">
-                                <img src="vendor/images/job/2.png" alt="">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/2.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
                               </div>
-                              <div class="title-company">
-                                <span class="title"> 
-                                  Kế toán tổng hợp
-                                </span>
-                                <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="item-content--info">
-                            <div class="flex">
-                              <div>
-                                <i class="bi bi-people-fill"></i>
-                                <span> <strong>Số lượng :</strong> 1</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-geo-alt"></i>
-                                <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-clock"></i>
-                              <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-gender-female"></i>
-                              <span> <strong>Giới tính :</strong> Nam</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-person-badge"></i>
-                              <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-calendar"></i>
-                                <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                              </div>
-                            </div>
-                          
-                        </div>
+                           </div>
                         </a>
-                      </div>
-                      <div class="card-item p-job">
-                            
+                     </div>
+                     <div class="card-item ">
                         <a href="#" class="item-content">
-                        
-                          <div class="item-content--company">
-                            <div class="flex">
-                              <div class="avatar">
-                                <img src="vendor/images/Logo.png" alt="">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/Logo.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
                               </div>
-                              <div class="title-company">
-                                <span class="title"> 
-                                  Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
-                                </span>
-                                <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-male"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="item-content--info">
-                            <div class="flex">
-                              <div>
-                                <i class="bi bi-people-fill"></i>
-                                <span> <strong>Số lượng :</strong> 1</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-geo-alt"></i>
-                                <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-gender-male"></i>
-                              <span> <strong>Giới tính :</strong> Nam</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-person-badge"></i>
-                              <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-clock"></i>
-                              <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                              </div>
-                              <div>
-                                <i class="bi bi-calendar"></i>
-                                <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                              </div>
-                            </div>
-                        </div>
-                    </a>
-                      </div>
-                      <div class="card-item p-job">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item">
                         <a href="#" class="item-content">
-                          <div class="item-content--company">
-                            <div class="flex">
-                              <div class="avatar">
-                                <img src="vendor/images/job/1.jpg" alt="">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/1.jpg" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
                               </div>
-                              <div class="title-company">
-                                <span class="title"> 
-                                  Kế toán tổng hợp
-                                </span>
-                                <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div class="flex-item">
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-arrow-clockwise"></i>
+                                    <span><strong>Vừa đăng:</strong> 10 phút trước</span>
+                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="item-content--info">
-                            <div class="flex">
-                              <div class="flex-item">
-                                <i class="bi bi-people-fill"></i>
-                                <span> <strong>Số lượng :</strong> 1</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/2.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
                               </div>
-                              <div class="flex-item">
-                                <i class="bi bi-geo-alt"></i>
-                                <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
                               </div>
-                              <div class="flex-item">
-                                <i class="bi bi-clock"></i>
-                              <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/Logo.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
                               </div>
-                              <div class="flex-item">
-                                <i class="bi bi-gender-female"></i>
-                              <span> <strong>Giới tính :</strong> Nam</span>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-male"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
                               </div>
-                              <div class="flex-item">
-                                <i class="bi bi-person-badge"></i>
-                              <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/1.jpg" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
                               </div>
-                              <div class="flex-item">
-                                <i class="bi bi-arrow-clockwise"></i>
-                                <span><strong>Vừa đăng:</strong> 10 phút trước</span>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div class="flex-item">
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-arrow-clockwise"></i>
+                                    <span><strong>Vừa đăng:</strong> 10 phút trước</span>
+                                 </div>
                               </div>
-                            </div>
-                        </div>
-                    </a>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/2.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/Logo.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-male"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <button class="effect load-more effect-1" >Xem thêm</button>      
                   </div>
-                  <div class="card-item p-job">
-                    <a href="#" class="item-content">
-                    
-                      <div class="item-content--company">
-                        <div class="flex">
-                          <div class="avatar">
-                            <img src="vendor/images/job/2.png" alt="">
-                          </div>
-                          <div class="title-company">
-                            <span class="title"> 
-                              Kế toán tổng hợp
-                            </span>
-                            <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item-content--info">
-                        <div class="flex">
-                          <div>
-                            <i class="bi bi-people-fill"></i>
-                            <span> <strong>Số lượng :</strong> 1</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-geo-alt"></i>
-                            <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-clock"></i>
-                          <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-gender-female"></i>
-                          <span> <strong>Giới tính :</strong> Nam</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-person-badge"></i>
-                          <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-calendar"></i>
-                            <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                          </div>
-                        </div>
-                      
-                    </div>
-                    </a>
+                  <div class="card-body" id="hot">
+                     <div class="card-item label-hot">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/1.jpg" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div class="flex-item">
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item label-hot">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/2.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item label-hot">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/Logo.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-male"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item label-hot">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/1.jpg" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div class="flex-item">
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div class="flex-item">
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item label-hot">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/job/2.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Kế toán tổng hợp
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-female"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="card-item label-hot">
+                        <a href="#" class="item-content">
+                           <div class="item-content--company">
+                              <div class="flex">
+                                 <div class="avatar">
+                                    <img src="vendor/images/Logo.png" alt="">
+                                 </div>
+                                 <div class="title-company">
+                                    <span class="title"> 
+                                    Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
+                                    </span>
+                                    <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-content--info">
+                              <div class="flex">
+                                 <div>
+                                    <i class="bi bi-people-fill"></i>
+                                    <span> <strong>Số lượng :</strong> 1</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-gender-male"></i>
+                                    <span> <strong>Giới tính :</strong> Nam</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-person-badge"></i>
+                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-clock"></i>
+                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                 </div>
+                                 <div>
+                                    <i class="bi bi-calendar"></i>
+                                    <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <button class="effect load-more effect-1">Xem thêm</button>      
                   </div>
-                  <div class="card-item p-job">
-                        
-                    <a href="#" class="item-content">
-                    
-                      <div class="item-content--company">
-                        <div class="flex">
-                          <div class="avatar">
-                            <img src="vendor/images/Logo.png" alt="">
-                          </div>
-                          <div class="title-company">
-                            <span class="title"> 
-                              Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
-                            </span>
-                            <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item-content--info">
-                        <div class="flex">
-                          <div>
-                            <i class="bi bi-people-fill"></i>
-                            <span> <strong>Số lượng :</strong> 1</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-geo-alt"></i>
-                            <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-gender-male"></i>
-                          <span> <strong>Giới tính :</strong> Nam</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-person-badge"></i>
-                          <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-clock"></i>
-                          <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                          </div>
-                          <div>
-                            <i class="bi bi-calendar"></i>
-                            <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                          </div>
-                        </div>
-                    </div>
-                </a>
-                  </div>
-                  <div class="card-item p-job">
-                    <a href="#" class="item-content">
-                      <div class="item-content--company">
-                        <div class="flex">
-                          <div class="avatar">
-                            <img src="vendor/images/job/1.jpg" alt="">
-                          </div>
-                          <div class="title-company">
-                            <span class="title"> 
-                              Kế toán tổng hợp
-                            </span>
-                            <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item-content--info">
-                        <div class="flex">
-                          <div class="flex-item">
-                            <i class="bi bi-people-fill"></i>
-                            <span> <strong>Số lượng :</strong> 1</span>
-                          </div>
-                          <div class="flex-item">
-                            <i class="bi bi-geo-alt"></i>
-                            <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                          </div>
-                          <div class="flex-item">
-                            <i class="bi bi-clock"></i>
-                          <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                          </div>
-                          <div class="flex-item">
-                            <i class="bi bi-gender-female"></i>
-                          <span> <strong>Giới tính :</strong> Nam</span>
-                          </div>
-                          <div class="flex-item">
-                            <i class="bi bi-person-badge"></i>
-                          <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                          </div>
-                          <div class="flex-item">
-                            <i class="bi bi-arrow-clockwise"></i>
-                            <span><strong>Vừa đăng:</strong> 10 phút trước</span>
-                          </div>
-                        </div>
-                    </div>
-                </a>
-              </div>
-              <div class="card-item p-job">
-                <a href="#" class="item-content">
-                
-                  <div class="item-content--company">
-                    <div class="flex">
-                      <div class="avatar">
-                        <img src="vendor/images/job/2.png" alt="">
-                      </div>
-                      <div class="title-company">
-                        <span class="title"> 
-                          Kế toán tổng hợp
-                        </span>
-                        <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-content--info">
-                    <div class="flex">
-                      <div>
-                        <i class="bi bi-people-fill"></i>
-                        <span> <strong>Số lượng :</strong> 1</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-geo-alt"></i>
-                        <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-clock"></i>
-                      <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-gender-female"></i>
-                      <span> <strong>Giới tính :</strong> Nam</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-person-badge"></i>
-                      <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-calendar"></i>
-                        <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                      </div>
-                    </div>
-                  
-                </div>
-                </a>
-              </div>
-              <div class="card-item p-job">
-                    
-                <a href="#" class="item-content">
-                
-                  <div class="item-content--company">
-                    <div class="flex">
-                      <div class="avatar">
-                        <img src="vendor/images/Logo.png" alt="">
-                      </div>
-                      <div class="title-company">
-                        <span class="title"> 
-                          Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
-                        </span>
-                        <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-content--info">
-                    <div class="flex">
-                      <div>
-                        <i class="bi bi-people-fill"></i>
-                        <span> <strong>Số lượng :</strong> 1</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-geo-alt"></i>
-                        <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-gender-male"></i>
-                      <span> <strong>Giới tính :</strong> Nam</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-person-badge"></i>
-                      <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-clock"></i>
-                      <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                      </div>
-                      <div>
-                        <i class="bi bi-calendar"></i>
-                        <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                      </div>
-                    </div>
-                </div>
-            </a>
-              </div>
-                      </div>
-                      <div class="card-body" id="hot">
-                        <div class="card-item p-job label-hot">
-                              <a href="#" class="item-content">
-                                <div class="item-content--company">
-                                  <div class="flex">
+                  <div class="card-body" id="salary">
+                     <div class="card-list">
+                        <div class="card-item">
+                           <a href="#" class="item-content">
+                              <div class="item-content--company">
+                                 <div class="flex">
                                     <div class="avatar">
-                                      <img src="vendor/images/job/1.jpg" alt="">
+                                       <img src="vendor/images/job/1.jpg" alt="">
                                     </div>
                                     <div class="title-company">
-                                      <span class="title"> 
-                                        Kế toán tổng hợp
-                                      </span>
-                                      <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                       <span class="title"> 
+                                       Kế toán tổng hợp
+                                       </span>
+                                       <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="item-content--info">
-                                  <div class="flex">
-                                    <div class="flex-item">
-                                      <i class="bi bi-people-fill"></i>
-                                      <span> <strong>Số lượng :</strong> 1</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-geo-alt"></i>
-                                      <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-clock"></i>
-                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-gender-female"></i>
-                                    <span> <strong>Giới tính :</strong> Nam</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-person-badge"></i>
-                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-calendar"></i>
-                                      <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                                    </div>
-                                  </div>
+                                 </div>
                               </div>
-                          </a>
+                              <div class="item-content--info">
+                                 <div class="flex">
+                                    <div class="flex-item">
+                                       <i class="bi bi-people-fill"></i>
+                                       <span> <strong>Số lượng :</strong> 1</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-geo-alt"></i>
+                                       <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-clock"></i>
+                                       <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-gender-female"></i>
+                                       <span> <strong>Giới tính :</strong> Nam</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-person-badge"></i>
+                                       <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-calendar"></i>
+                                       <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
                         </div>
-                        <div class="card-item p-job label-hot">
-                          <a href="#" class="item-content">
-                          
-                            <div class="item-content--company">
-                              <div class="flex">
-                                <div class="avatar">
-                                  <img src="vendor/images/job/2.png" alt="">
-                                </div>
-                                <div class="title-company">
-                                  <span class="title"> 
-                                    Kế toán tổng hợp
-                                  </span>
-                                  <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item-content--info">
-                              <div class="flex">
-                                <div>
-                                  <i class="bi bi-people-fill"></i>
-                                  <span> <strong>Số lượng :</strong> 1</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-geo-alt"></i>
-                                  <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-clock"></i>
-                                <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-gender-female"></i>
-                                <span> <strong>Giới tính :</strong> Nam</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-person-badge"></i>
-                                <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-calendar"></i>
-                                  <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                                </div>
-                              </div>
-                            
-                          </div>
-                          </a>
-                        </div>
-                        <div class="card-item p-job label-hot">
-                              
-                          <a href="#" class="item-content">
-                          
-                            <div class="item-content--company">
-                              <div class="flex">
-                                <div class="avatar">
-                                  <img src="vendor/images/Logo.png" alt="">
-                                </div>
-                                <div class="title-company">
-                                  <span class="title"> 
-                                    Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
-                                  </span>
-                                  <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="item-content--info">
-                              <div class="flex">
-                                <div>
-                                  <i class="bi bi-people-fill"></i>
-                                  <span> <strong>Số lượng :</strong> 1</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-geo-alt"></i>
-                                  <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-gender-male"></i>
-                                <span> <strong>Giới tính :</strong> Nam</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-person-badge"></i>
-                                <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-clock"></i>
-                                <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-calendar"></i>
-                                  <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                                </div>
-                              </div>
-                          </div>
-                      </a>
-                        </div>
-                      </div>
-                      <div class="card-body" id="salary">
-                        <div class="card-item p-job">
-                              <a href="#" class="item-content">
-                                <div class="item-content--company">
-                                  <div class="flex">
+                        <div class="card-item">
+                           <a href="#" class="item-content">
+                              <div class="item-content--company">
+                                 <div class="flex">
                                     <div class="avatar">
-                                      <img src="vendor/images/job/1.jpg" alt="">
+                                       <img src="vendor/images/job/2.png" alt="">
                                     </div>
                                     <div class="title-company">
-                                      <span class="title"> 
-                                        Kế toán tổng hợp
-                                      </span>
-                                      <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                       <span class="title"> 
+                                       Kế toán tổng hợp
+                                       </span>
+                                       <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="item-content--info">
-                                  <div class="flex">
-                                    <div class="flex-item">
-                                      <i class="bi bi-people-fill"></i>
-                                      <span> <strong>Số lượng :</strong> 1</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-geo-alt"></i>
-                                      <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-clock"></i>
-                                    <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-gender-female"></i>
-                                    <span> <strong>Giới tính :</strong> Nam</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-person-badge"></i>
-                                    <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                    </div>
-                                    <div class="flex-item">
-                                      <i class="bi bi-calendar"></i>
-                                      <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                                    </div>
-                                  </div>
+                                 </div>
                               </div>
-                          </a>
+                              <div class="item-content--info">
+                                 <div class="flex">
+                                    <div>
+                                       <i class="bi bi-people-fill"></i>
+                                       <span> <strong>Số lượng :</strong> 1</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-geo-alt"></i>
+                                       <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-clock"></i>
+                                       <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-gender-female"></i>
+                                       <span> <strong>Giới tính :</strong> Nam</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-person-badge"></i>
+                                       <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-calendar"></i>
+                                       <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
                         </div>
-                        <div class="card-item p-job">
-                          <a href="#" class="item-content">
-                          
-                            <div class="item-content--company">
-                              <div class="flex">
-                                <div class="avatar">
-                                  <img src="vendor/images/job/2.png" alt="">
-                                </div>
-                                <div class="title-company">
-                                  <span class="title"> 
-                                    Kế toán tổng hợp
-                                  </span>
-                                  <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                                </div>
+                        <div class="card-item">
+                           <a href="#" class="item-content">
+                              <div class="item-content--company">
+                                 <div class="flex">
+                                    <div class="avatar">
+                                       <img src="vendor/images/Logo.png" alt="">
+                                    </div>
+                                    <div class="title-company">
+                                       <span class="title"> 
+                                       Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
+                                       </span>
+                                       <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                    </div>
+                                 </div>
                               </div>
-                            </div>
-                            <div class="item-content--info">
-                              <div class="flex">
-                                <div>
-                                  <i class="bi bi-people-fill"></i>
-                                  <span> <strong>Số lượng :</strong> 1</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-geo-alt"></i>
-                                  <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-clock"></i>
-                                <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-gender-female"></i>
-                                <span> <strong>Giới tính :</strong> Nam</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-person-badge"></i>
-                                <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-calendar"></i>
-                                  <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                                </div>
+                              <div class="item-content--info">
+                                 <div class="flex">
+                                    <div>
+                                       <i class="bi bi-people-fill"></i>
+                                       <span> <strong>Số lượng :</strong> 1</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-geo-alt"></i>
+                                       <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-gender-male"></i>
+                                       <span> <strong>Giới tính :</strong> Nam</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-person-badge"></i>
+                                       <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-clock"></i>
+                                       <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-calendar"></i>
+                                       <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                    </div>
+                                 </div>
                               </div>
-                            
-                          </div>
-                          </a>
+                           </a>
                         </div>
-                        <div class="card-item p-job">
-                              
-                          <a href="#" class="item-content">
-                          
-                            <div class="item-content--company">
-                              <div class="flex">
-                                <div class="avatar">
-                                  <img src="vendor/images/Logo.png" alt="">
-                                </div>
-                                <div class="title-company">
-                                  <span class="title"> 
-                                    Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
-                                  </span>
-                                  <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
-                                </div>
+                        <div class="card-item">
+                           <a href="#" class="item-content">
+                              <div class="item-content--company">
+                                 <div class="flex">
+                                    <div class="avatar">
+                                       <img src="vendor/images/job/1.jpg" alt="">
+                                    </div>
+                                    <div class="title-company">
+                                       <span class="title"> 
+                                       Kế toán tổng hợp
+                                       </span>
+                                       <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                    </div>
+                                 </div>
                               </div>
-                            </div>
-                            <div class="item-content--info">
-                              <div class="flex">
-                                <div>
-                                  <i class="bi bi-people-fill"></i>
-                                  <span> <strong>Số lượng :</strong> 1</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-geo-alt"></i>
-                                  <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-gender-male"></i>
-                                <span> <strong>Giới tính :</strong> Nam</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-person-badge"></i>
-                                <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-clock"></i>
-                                <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
-                                </div>
-                                <div>
-                                  <i class="bi bi-calendar"></i>
-                                  <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
-                                </div>
+                              <div class="item-content--info">
+                                 <div class="flex">
+                                    <div class="flex-item">
+                                       <i class="bi bi-people-fill"></i>
+                                       <span> <strong>Số lượng :</strong> 1</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-geo-alt"></i>
+                                       <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-clock"></i>
+                                       <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-gender-female"></i>
+                                       <span> <strong>Giới tính :</strong> Nam</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-person-badge"></i>
+                                       <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                    </div>
+                                    <div class="flex-item">
+                                       <i class="bi bi-calendar"></i>
+                                       <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                    </div>
+                                 </div>
                               </div>
-                          </div>
-                      </a>
+                           </a>
                         </div>
-                      </div>
-                      <button class="recruitment-btn btn-2">Xem thêm</button>
-                </div>
-                <div class="recruitment-filter">
-                    
-                </div>
+                        <div class="card-item">
+                           <a href="#" class="item-content">
+                              <div class="item-content--company">
+                                 <div class="flex">
+                                    <div class="avatar">
+                                       <img src="vendor/images/job/2.png" alt="">
+                                    </div>
+                                    <div class="title-company">
+                                       <span class="title"> 
+                                       Kế toán tổng hợp
+                                       </span>
+                                       <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="item-content--info">
+                                 <div class="flex">
+                                    <div>
+                                       <i class="bi bi-people-fill"></i>
+                                       <span> <strong>Số lượng :</strong> 1</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-geo-alt"></i>
+                                       <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-clock"></i>
+                                       <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-gender-female"></i>
+                                       <span> <strong>Giới tính :</strong> Nam</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-person-badge"></i>
+                                       <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-calendar"></i>
+                                       <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="card-item">
+                           <a href="#" class="item-content">
+                              <div class="item-content--company">
+                                 <div class="flex">
+                                    <div class="avatar">
+                                       <img src="vendor/images/Logo.png" alt="">
+                                    </div>
+                                    <div class="title-company">
+                                       <span class="title"> 
+                                       Nhân viên chăm sóc khách hàng thân thiện hòa đồng với mọi người
+                                       </span>
+                                       <p class="company">Tủ nhựa đài loan cao cấp song ngân</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="item-content--info">
+                                 <div class="flex">
+                                    <div>
+                                       <i class="bi bi-people-fill"></i>
+                                       <span> <strong>Số lượng :</strong> 1</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-geo-alt"></i>
+                                       <span> <strong>Địa điểm :</strong> Thành Phố Thuận An</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-gender-male"></i>
+                                       <span> <strong>Giới tính :</strong> Nam</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-person-badge"></i>
+                                       <span> <strong>Độ tuổi :</strong> 20 -25 tuổi</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-clock"></i>
+                                       <span> <strong>Hạn nộp :</strong> 13/9/2024</span>
+                                    </div>
+                                    <div>
+                                       <i class="bi bi-calendar"></i>
+                                       <span><strong>Kinh nghiệm:</strong> Từ 2 năm đến 5 năm</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <button class="effect load-more effect-1">Xem thêm</button>      
+                  </div>
+               </div>
+               <div class="recruitment-filter recruitment-item" id="blockFilterRight">
+                  <div class="filter-header">
+                     <p>
+                        Bộ lọc nâng cao
+                     </p>
+                  </div>
+                  <div class="filter-inner">
+                     <div class="filter-item">
+                        <div class="filter-title accordion active">
+                           <p>
+                              Lọc theo mức lương
+                           </p>
+                           <i class="bi bi-chevron-double-down"></i>  
+                        </div>
+                        <div class="filter-list active">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_1" name="filter-capbac-ml-1" data-text="thoa-thuan" class="custom-control-input filter" value="1" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_1">
+                                    <span>Thỏa thuận</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_2" name="filter-capbac-ml-2" data-text="duoi-3-trieu" class="custom-control-input filter" value="2" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_2">
+                                    <span>Dưới 3 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_3" name="filter-capbac-ml-3" data-text="3-5-trieu" class="custom-control-input filter" value="3" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_3">
+                                    <span>3 - 5 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_4" name="filter-capbac-ml-4" data-text="5-7-trieu" class="custom-control-input filter" value="4" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_4">
+                                    <span>5 - 7 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_5" name="filter-capbac-ml-5" data-text="7-10-trieu" class="custom-control-input filter" value="5" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_5">
+                                    <span>7 - 10 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_7" name="filter-capbac-ml-7" data-text="12-15-trieu" class="custom-control-input filter" value="7" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_7">
+                                    <span>12 - 15 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_8" name="filter-capbac-ml-8" data-text="15-20-trieu" class="custom-control-input filter" value="8" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_8">
+                                    <span>15 - 20 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_9" name="filter-capbac-ml-9" data-text="20-25-trieu" class="custom-control-input filter" value="9" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_9">
+                                    <span>20 - 25 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_10" name="filter-capbac-ml-10" data-text="25-30-trieu" class="custom-control-input filter" value="10" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_10">
+                                    <span>25 - 30 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioMucluong_11" name="filter-capbac-ml-11" data-text="tren-30-trieu" class="custom-control-input filter" value="11" data-type="mucluong">
+                                    <label class="custom-control-label" for="customRadioMucluong_11">
+                                    <span>Trên 30 triệu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+             
+                     <div class="filter-item">
+                        <div class="filter-title accordion active">
+                           <p>
+                              Lọc theo kinh nghiệm
+                           </p>
+                           <i class="bi bi-chevron-double-down"></i>
+                        </div>
+                        <div class="filter-list active" id="filterKinhNghiem">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioKinhNghiem_1" name="filter-kinhnghiem" data-text="khong-yeu-cau" class="custom-control-input filter" value="1" data-type="kinhnghiem">
+                                    <label class="custom-control-label" for="customRadioKinhNghiem_1">
+                                    <span>Không yêu cầu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioKinhNghiem_8" name="filter-kinhnghiem" data-text="duoi-1-nam" class="custom-control-input filter" value="8" data-type="kinhnghiem">
+                                    <label class="custom-control-label" for="customRadioKinhNghiem_8">
+                                    <span>Dưới 1 năm</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioKinhNghiem_2" name="filter-kinhnghiem" data-text="1-nam" class="custom-control-input filter" value="2" data-type="kinhnghiem">
+                                    <label class="custom-control-label" for="customRadioKinhNghiem_2">
+                                    <span>1 năm</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioKinhNghiem_3" name="filter-kinhnghiem" data-text="2-nam" class="custom-control-input filter" value="3" data-type="kinhnghiem">
+                                    <label class="custom-control-label" for="customRadioKinhNghiem_3">
+                                    <span>2 năm</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioKinhNghiem_4" name="filter-kinhnghiem" data-text="3-nam" class="custom-control-input filter" value="4" data-type="kinhnghiem">
+                                    <label class="custom-control-label" for="customRadioKinhNghiem_4">
+                                    <span>3 năm</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioKinhNghiem_5" name="filter-kinhnghiem" data-text="4-nam" class="custom-control-input filter" value="5" data-type="kinhnghiem">
+                                    <label class="custom-control-label" for="customRadioKinhNghiem_5">
+                                    <span>4 năm</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioKinhNghiem_6" name="filter-kinhnghiem" data-text="5-nam" class="custom-control-input filter" value="6" data-type="kinhnghiem">
+                                    <label class="custom-control-label" for="customRadioKinhNghiem_6">
+                                    <span>5 năm</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioKinhNghiem_7" name="filter-kinhnghiem" data-text="tren-5-nam" class="custom-control-input filter" value="7" data-type="kinhnghiem">
+                                    <label class="custom-control-label" for="customRadioKinhNghiem_7">
+                                    <span>Trên 5 năm</span>
+                                    </label>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="filter-item">
+                        <div class="filter-title accordion active">
+                           <p>
+                              Lọc theo thời gian
+                           </p>
+                           <i class="bi bi-chevron-double-down"></i>
+                        </div>
+                        <div class="filter-list active" id="filterTime">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadioTime_1" name="filter-time" data-text="24h-gio-qua" class="custom-control-input filter" value="1" data-type="time">
+                                    <label class="custom-control-label" for="customRadioTime_1">
+                                          <span>24h giờ qua</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadioTime_7" name="filter-time" data-text="7-ngay-qua" class="custom-control-input filter" value="7" data-type="time">
+                                    <label class="custom-control-label" for="customRadioTime_7">
+                                          <span>7 ngày qua</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadioTime_14" name="filter-time" data-text="14-ngay-qua" class="custom-control-input filter" value="14" data-type="time">
+                                    <label class="custom-control-label" for="customRadioTime_14">
+                                          <span>14 ngày qua</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadioTime_30" name="filter-time" data-text="30-ngay-qua" class="custom-control-input filter" value="30" data-type="time">
+                                    <label class="custom-control-label" for="customRadioTime_30">
+                                          <span>30 ngày qua</span>
+                                    </label>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="filter-item">
+                        <div class="filter-title accordion active">
+                           <p>
+                              Lọc theo trình độ
+                           </p>
+                           <i class="bi bi-chevron-double-down"></i>
+                        </div>
+                        <div class="filter-list active" >
+                           <ul class="list-unstyled">
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioTrinhDo_7" name="filter-trinhdo" data-text="khong-yeu-cau" class="custom-control-input filter" value="7" data-type="trinhdo">
+                                    <label class="custom-control-label" for="customRadioTrinhDo_7">
+                                    <span>Không yêu cầu</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioTrinhDo_1" name="filter-trinhdo" data-text="tren-dai-hoc" class="custom-control-input filter" value="1" data-type="trinhdo">
+                                    <label class="custom-control-label" for="customRadioTrinhDo_1">
+                                    <span>Trên đại học</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioTrinhDo_2" name="filter-trinhdo" data-text="dai-hoc" class="custom-control-input filter" value="2" data-type="trinhdo">
+                                    <label class="custom-control-label" for="customRadioTrinhDo_2">
+                                    <span>Đại học</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioTrinhDo_3" name="filter-trinhdo" data-text="cao-dang" class="custom-control-input filter" value="3" data-type="trinhdo">
+                                    <label class="custom-control-label" for="customRadioTrinhDo_3">
+                                    <span>Cao đẳng</span>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioTrinhDo_4" name="filter-trinhdo" data-text="trung-cap" class="custom-control-input filter" value="4" data-type="trinhdo">
+                                    <label class="custom-control-label" for="customRadioTrinhDo_4">
+                                    <span>Trung cấp</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioTrinhDo_5" name="filter-trinhdo" data-text="chung-chi-nghe" class="custom-control-input filter" value="5" data-type="trinhdo">
+                                    <label class="custom-control-label" for="customRadioTrinhDo_5">
+                                    <span>Chứng chỉ nghề</span>
+                                    </label>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="customRadioTrinhDo_6" name="filter-trinhdo" data-text="pho-thong" class="custom-control-input filter" value="6" data-type="trinhdo">
+                                    <label class="custom-control-label" for="customRadioTrinhDo_6">
+                                    <span>Phổ thông</span>
+                                    </label>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <section class="footer content-padding">
-        <div class="container">
+         </div>
+      </section>
+      <section class="footer content-padding">
+         <div class="container">
             <div class="footer-list">
-            <div class="footer-item first">
-                <h4>Về chúng tôi</h4>
-                <a href="#"><img src="vendor/images/LogoTT.png" alt="TRUNG TÂM VIỆC LÀM DỊCH VỤ BÌNH DƯƠNG" title="TRUNG TÂM VIỆC LÀM DỊCH VỤ BÌNH DƯƠNG"></a>
-                <p>Trung tâm dịch vụ việc làm Bình Dương Tuyển dụng Giới thiệu việc làm "miễn phí" và Giải quyết chế độ BHTN Đào tạo nghề "miễn phí"</p>
+               <div class="footer-item first">
+                  <h4>Về chúng tôi</h4>
+                  <a href="#"><img src="vendor/images/LogoTT.png" alt="TRUNG TÂM VIỆC LÀM DỊCH VỤ BÌNH DƯƠNG" title="TRUNG TÂM VIỆC LÀM DỊCH VỤ BÌNH DƯƠNG"></a>
+                  <p>Trung tâm dịch vụ việc làm Bình Dương Tuyển dụng Giới thiệu việc làm "miễn phí" và Giải quyết chế độ BHTN Đào tạo nghề "miễn phí"</p>
+               </div>
+               <div class="footer-item second">
+                  <h4>Liên hệ với chi nhánh</h4>
+                  <ul>
+                     <li><i class="bi bi-geo"></i><span> Trụ sở chính :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                     <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
+                  </ul>
+                  <ul>
+                     <li><i class="bi bi-geo"></i><span> Chi nhánh Dĩ An :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                     <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
+                  </ul>
+                  <ul>
+                     <li><i class="bi bi-geo"></i><span> Chi nhánh Tân Định :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                     <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
+                  </ul>
+                  <ul>
+                     <li><i class="bi bi-geo"></i><span> Chi nhánh Tân Uyên :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                     <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019">(0274) 3.899.019</a></li>
+                  </ul>
+               </div>
+               <div class="footer-item third">
+                  <h4>Liên kết website</h4>
+                  <div class="footer-item--website">
+                     <a href="#" class="img-col link">
+                     <img src="vendor/images/footer/1.png" alt="liên kết website">
+                     </a>
+                     <a href="#" class="img-col link">
+                     <img src="vendor/images/footer/1.png" alt="liên kết website">
+                     </a>
+                     <a href="#" class="img-col link">
+                     <img src="vendor/images/footer/1.png" alt="liên kết website">
+                     </a>
+                     <a href="#" class="img-col link">
+                     <img src="vendor/images/footer/1.png" alt="liên kết website">
+                     </a>
+                     <a href="#" class="img-col link">
+                     <img src="vendor/images/footer/1.png" alt="liên kết website">
+                     </a>
+                     <a href="#" class="img-col link">
+                     <img src="vendor/images/footer/1.png" alt="liên kết website">
+                     </a>
+                  </div>
+                  <div class="footer-item--data">
+                     <div class="data-col">
+                        <i class="bi bi-person-fill"></i>
+                        <span>Đang Tham Gia : 18550</span>
+                     </div>
+                     <div class="data-col right">
+                        <i class="bi bi-calendar-event"></i>
+                        <span>Hôm nay : 18550</span>
+                     </div>
+                     <div class="data-col">
+                        <i class="bi bi-calendar"></i>
+                        <span>Tổng số : 18550</span>
+                     </div>
+                     <div class="data-col right">
+                        <i class="bi bi-card-list"></i>
+                        <span>Hôm qua : 18550</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-item four">
+                  <h4>Mạng xã hội</h4>
+                  <div class="social-col">
+                     <a href="https://www.facebook.com/profile.php?id=100067159210651"  class="icon-facebook link" target="_blank">
+                     <i class="bi bi-facebook"></i>
+                     </a>
+                     <a href="https://www.youtube.com/@vieclam01"  class="icon-youtube link" target="_blank">
+                     <i class="bi bi-youtube"></i>
+                     </a>
+                     <a href=""  class="icon-zalo link" target="_blank">
+                     <img src="vendor/images/footer/vector-zalo.svg" alt="" >
+                     </a>
+                     <a href="https://play.google.com/store/search?q=vi%E1%BB%87c%20l%C3%A0m%20b%C3%ACnh%20d%C6%B0%C6%A1ng&c=apps&hl=vi"  class="icon-android link" target="_blank">
+                     <i class="bi bi-android2"></i>
+                     </a>
+                     <a href="#"  class="icon-apple link">
+                     <i class="bi bi-apple"></i>
+                     </a>
+                  </div>
+               </div>
             </div>
-                <div class="footer-item second">
-                <h4>Liên hệ với chi nhánh</h4>
-                <ul>
-                    <li><i class="bi bi-geo"></i><span> Trụ sở chính :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
-                    <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
-                </ul>
-                <ul>
-                    <li><i class="bi bi-geo"></i><span> Chi nhánh Dĩ An :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
-                    <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
-                </ul>
-                <ul>
-                    <li><i class="bi bi-geo"></i><span> Chi nhánh Tân Định :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
-                    <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
-                </ul>
-                <ul>
-                    <li><i class="bi bi-geo"></i><span> Chi nhánh Tân Uyên :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
-                    <li><i class="bi bi-telephone"></i> Số điện thoại : </span>  <a href="tel:(0274) 3.899.019">(0274) 3.899.019</a></li>
-                </ul>
-            
-                
-                </div>
-                <div class="footer-item third">
-                <h4>Liên kết website</h4>
-                <div class="footer-item--website">
-                    <a href="#" class="img-col link">
-                    <img src="vendor/images/footer/1.png" alt="liên kết website">
-                    </a>
-                    <a href="#" class="img-col link">
-                    <img src="vendor/images/footer/1.png" alt="liên kết website">
-                    </a>
-                    <a href="#" class="img-col link">
-                    <img src="vendor/images/footer/1.png" alt="liên kết website">
-                    </a>
-                    <a href="#" class="img-col link">
-                    <img src="vendor/images/footer/1.png" alt="liên kết website">
-                    </a>
-                    <a href="#" class="img-col link">
-                    <img src="vendor/images/footer/1.png" alt="liên kết website">
-                    </a>
-                    <a href="#" class="img-col link">
-                    <img src="vendor/images/footer/1.png" alt="liên kết website">
-                    </a>
-                </div>
-                <div class="footer-item--data">
-                    <div class="data-col">
-                    <i class="bi bi-person-fill"></i>
-                    <span>Đang Tham Gia : 18550</span>
-                    </div>
-                    <div class="data-col right">
-                    <i class="bi bi-calendar-event"></i>
-                    <span>Hôm nay : 18550</span>
-                    </div>
-                    <div class="data-col">
-                    <i class="bi bi-calendar"></i>
-                    <span>Tổng số : 18550</span>
-                    </div>
-                    <div class="data-col right">
-                    <i class="bi bi-card-list"></i>
-                    <span>Hôm qua : 18550</span>
-                    </div>
-                </div>
-                </div>
-                <div class="footer-item four">
-                <h4>Mạng xã hội</h4>
-                <div class="social-col">
-                <a href="https://www.facebook.com/profile.php?id=100067159210651"  class="icon-facebook link" target="_blank">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://www.youtube.com/@vieclam01"  class="icon-youtube link" target="_blank">
-                    <i class="bi bi-youtube"></i>
-                </a>
-                <a href=""  class="icon-zalo link" target="_blank">
-                    <img src="vendor/images/footer/vector-zalo.svg" alt="" >
-                </a>
-                <a href="https://play.google.com/store/search?q=vi%E1%BB%87c%20l%C3%A0m%20b%C3%ACnh%20d%C6%B0%C6%A1ng&c=apps&hl=vi"  class="icon-android link" target="_blank">
-                    <i class="bi bi-android2"></i>
-                </a>
-                <a href="#"  class="icon-apple link">
-                    <i class="bi bi-apple"></i>
-                </a>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="footer-clean">
-        <div class="container">
-        <p>© 2024 TTDVVL Bình Dương. All rights reserved. </p>
-        </div>
-    </section>
-        <script src="vendor/js/library/jquery.js"></script>
-        <script src="vendor/js/library/lib-slick.js"></script>
-        <script src="vendor/js/slick.js"></script> 
-        <script src="vendor/js/library/select2.js"></script>
-        <script src="vendor/js/main.js"></script>
-</body>
+         </div>
+      </section>
+      <section class="footer-clean">
+         <div class="container">
+            <p>© 2024 TTDVVL Bình Dương. All rights reserved. </p>
+         </div>
+      </section>
+      <script src="vendor/js/library/jquery.js"></script>
+      <script src="vendor/js/library/lib-slick.js"></script>
+      <script src="vendor/js/slick.js"></script> 
+      <script src="vendor/js/library/select2.js"></script>
+      <script src="vendor/js/main.js"></script>
+      <script src="vendor/js/tuyen-dung.js"></script>
+   </body>
 </html>
