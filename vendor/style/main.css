@@ -1987,18 +1987,7 @@ h4 {
   -webkit-line-clamp: 3;
 }
 
-.hot-news--item .news-item__content .view-note {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-}
-
-.hot-news--item .news-item__content .view-note--item i, .hot-news--item .news-item__content .view-note--item span {
+.hot-news--item .news-item__content .advise-block i, .hot-news--item .news-item__content .advise-block span {
   font-size: 14px;
 }
 

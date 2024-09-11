@@ -14,8 +14,6 @@ $('.video-class').slick({
 $('.hot-list').slick({
     arrows: false,
     autoplay : true,
-    prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
-    nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>",
     autoplaySpeed: 2000,
 });
 $('.hot-list--small').slick({

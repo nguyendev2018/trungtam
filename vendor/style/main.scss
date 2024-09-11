@@ -644,14 +644,9 @@
                         -webkit-box-orient: vertical;
                         -webkit-line-clamp: 3;
                     }
-                    .view-note {
-                        display: flex;
-                        justify-content: space-between;
-                        column-gap: 30px;
-                        &--item {
-                            i,span{
-                                font-size: 14px;
-                            }
+                    .advise-block{
+                        i,span {
+                            font-size: 14px;
                         }
                     }
                 }
