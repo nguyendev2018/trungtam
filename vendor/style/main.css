@@ -1205,6 +1205,14 @@ h4 {
   }
 }
 
+.news-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+}
+
 .entry-title {
   color: #000;
   overflow: hidden;

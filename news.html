@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức</title>
+    <link rel="icon" type="image/x-icon" href="vendor/images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/style/slick.css"/>
+    <link rel="stylesheet" href="vendor/style/search.css">
+    <link rel="stylesheet" href="vendor/style/main.css" />
+    <link rel="stylesheet" href="vendor/js/main.js" />
+</head>
+<body>
+    <a href="#" class="scroll-up">
+        <i class="bi bi-chevron-up"></i>
+    </a>
+    <div class="header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-left header-spacing">
+                <a class="header-left__link" href="tel:(0274) 3.899.019">
+                <i class="bi bi-telephone"></i>
+                <span>(0274) 3.899.019</span>
+                </a>
+                <a class="header-left__link" href="mailto:cantho@vietnamhr.vn" >
+                <i class="bi bi-envelope-at"></i>
+                <span>phonggtvlbd@gmail.com</span>
+                </a>
+                </div>
+                <div class="header-right">
+                <div class="header-right__auth header-spacing">
+                    <a href="#dangnhap">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>Đăng nhập</span>
+                    </a>
+                    <a href="#dangky">
+                    <i class="bi bi-person"></i>
+                    <span>Đăng ký</span>
+                    </a>
+                </div>
+                <div class="header-right__flag header-spacing">
+                    <div class="flag-lag">
+                        <img src="vendor/images/flag-vietnam.png" alt="Tiếng Việt" />
+                    </div>
+                    <div class="flag-lag">
+                        <img src="vendor/images/flag-english.png" alt="Tiếng Anh" />
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom container">
+            <a href="#" class="header-logo">
+            <img
+                src="vendor/images/Logo.png"
+                alt="Trung Tâm Dịch Vụ Việc Làm Bình Dương" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
+                />
+            </a>
+            <div class="navbar">
+                <div class="navbar-toggle">
+                <div class="navbar-bars"></div>
+                </div>
+                <div class="navbar-menu">
+                <div class="navbar-header">
+                    <a href="#">
+                    <img src="vendor/images/Logo.png" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG" alt="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG">
+                    </a>
+                </div>
+                <a class="navbar-item" href="/Home">
+                <img
+                    src="vendor/images/header-bottom/icon-home.png"
+                    class="navbar-icon"
+                    alt="Trang Chủ"
+                    />
+                <i class="bi bi-chevron-right"></i>
+                Trang Chủ
+                </a>
+                <a class="navbar-item" href="/Ung-Vien" id="CanMenu">
+                <img
+                    src="vendor/images/header-bottom/icon-vieclam.png"
+                    class="navbar-icon"
+                    alt="Người Tìm Việc"
+                    />
+                <i class="bi bi-chevron-right"></i>
+                Người Tìm Việc
+                </a>
+                <a class="navbar-item" href="/Gioi-Thieu">
+                <img
+                    src="vendor/images/header-bottom/icon-timviec.png"
+                    class="navbar-icon"
+                    alt="Giới Thiệu"
+                    />
+                <i class="bi bi-chevron-right"></i>
+                Giới Thiệu
+                </a>
+                <a class="navbar-item" href="/Tuyen-Dung" id="JobMenu">
+                <img
+                    src="vendor/images/header-bottom/icon-job.png"
+                    class="navbar-icon"
+                    alt="Tuyển Dụng"
+                    />
+                <i class="bi bi-chevron-right"></i>
+                Tuyển Dụng
+                </a>
+                <a
+                    class="navbar-item"
+                    title="Sàn online là tính năng mới để kết nối NLD và DN. Bạn sẻ được chat trực tiếp với ứng viên hoặc doanh nghiệp"
+                    >
+                <img
+                    src="vendor/images/header-bottom/icon-sanonline.jpg"
+                    class="navbar-icon"
+                    alt="Sàn Oline"
+                    />
+                <i class="bi bi-chevron-right"></i>
+                Sàn Online
+                </a>
+                <a class="navbar-item" href="/Van-Ban">
+                <img
+                    src="vendor/images/header-bottom/icon-book.png"
+                    class="navbar-icon"
+                    alt="Văn Bản"
+                    />
+                <i class="bi bi-chevron-right"></i>
+                Văn Bản
+                </a>
+                <a class="navbar-item" href="/News/NewsByCategory/3330">
+                <img
+                    src="vendor/images/header-bottom/icon-hanhchinh.png"
+                    class="navbar-icon"
+                    alt="TT Hành Chính"
+                    />
+                <i class="bi bi-chevron-right"></i>
+                TT Hành Chính
+                </a>
+                <a class="navbar-item" href="/Tin-Tuc" id="NewsMenu">
+                <img
+                    src="vendor/images/header-bottom/icon-news.png"
+                    alt="Tin Tức"
+                    class="navbar-icon"
+                    />
+                <i class="bi bi-chevron-right"></i>
+                Tin Tức
+                </a>
+                <a
+                    class="navbar-item navbar-item--sign"
+                    href="/Tin-Tuc"
+                    id="NewsMenu"
+                    >
+                <i class="bi bi-chevron-right"></i>
+                Đăng nhập
+                </a>
+                <a
+                    class="navbar-item navbar-item--sign"
+                    href="/Tin-Tuc"
+                    id="NewsMenu"
+                    >
+                <i class="bi bi-chevron-right"></i>
+                Đăng ký
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-search">
+            <div class="header-search__top">
+                <div class="container">
+                <div class="header-search__list">
+                    <div class="header-search__item">
+                        <h1 class="header-title">VIỆC LÀM BÌNH DƯƠNG</h1>
+                        <h2 class="header-subTitle">
+                            <i>Sàn Giao Dịch Việc Làm Tại Bình Dương</i>
+                        </h2>
+                    </div>
+                    <div class="header-search__item">
+                        <div class="job-market">
+                            <div class="job-market__top">
+                            <div class="job-market__title">
+                                <img
+                                    src="vendor/images/search.svg"
+                                    alt="search"
+                                    class="job-market__icon"
+                                    />
+                                Thị trường việc làm hôm nay :
+                            </div>
+                            <div class="job-market__date">23/07/2024</div>
+                            </div>
+                            <div class="job-market__bottom">
+                            <h3 class="job-market__item">
+                                <span class="job-market__title">
+                                Việc làm đang tuyển :
+                                </span>
+                                <a href="/viec-lam-moi-nhat" class="job-market__value">
+                                1.432
+                                </a>
+                            </h3>
+                            <div class="job-market__divider"></div>
+                            <h3 class="job-market__item">
+                                <span class="job-market__title">
+                                Việc làm hôm nay :
+                                </span>
+                                <a
+                                    href="/viec-lam-can-tho-moi-nhat"
+                                    class="job-market__value"
+                                    >
+                                26
+                                </a>
+                            </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="header-form">
+                <div class="search-bar">
+                <form name="frmSearch" id="frmSearch" >
+                <div class="container">
+                    <div class="search-inner">
+                        <div class="search-inner__list">
+                            <div class="search-inner__search search-inner__item  search-group_float">
+                            <div class="search-inner__searchCol">
+                                <div
+                                    class="form-group search-group_float__item noidung"
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Tiêu đề công việc, vị trí..."
+                                        value=""
+                                        id="searchStr"
+                                        />
+                                </div>
+                            </div>
+                            <div class="search-inner__searchCol">
+                                <div
+                                    class="form-group  search-group_float__item search-group_float__select nganhnghe"
+                                    >
+                                    <select
+                                        class="form-control select2 vieclam-select2"
+                                        multiple=""
+                                        data-wrapper=""
+                                        name="searchNN"
+                                        id="searchNN"
+                                        data-placeholder="Lọc theo ngành nghề"
+                                        size="1"
+                                        >
+                                        <option class="option-items " value="-1">
+                                        Ngành nghề
+                                        </option>
+                                        <option class="option-items " value="24">
+                                        Bảo vệ
+                                        </option>
+                                        <option class="option-items " value="10">
+                                        Hóa học
+                                        </option>
+                                        <option class="option-items " value="38">
+                                        Bất động sản
+                                        </option>
+                                        <option class="option-items " value="56">
+                                        Làm đẹp
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="search-inner__filter search-inner__item filter">
+                            <div class="search-inner__filterCol">
+                                <div
+                                    class="form-group search-group_float__item diadiem"
+                                    >
+                                    <select
+                                        class="form-control vieclam-select2 select2"
+                                        name=""
+                                        multiple=""
+                                        data-wrapper=""
+                                        id="searchDD"
+                                        data-placeholder="Lọc theo địa điểm"
+                                        size="1"
+                                        >
+                                        <option class="option-items " value="-1">
+                                        Địa điểm - Tất cả
+                                        </option>
+                                        <option class="option-items " value="1">
+                                        Cần Thơ
+                                        </option>
+                                        <option class="option-items " value="2">
+                                        Vĩnh Long
+                                        </option>
+                                        <option class="option-items " value="8">
+                                        Hậu Giang
+                                        </option>
+                                        <option class="option-items " value="71">
+                                        Khác
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="search-inner__filterCol">
+                                <button type="submit" class="form-control btn-find btn-primary hidden-sm">
+                                Tìm kiếm
+                                </button>
+                            </div>
+                            </div>
+                            <div class="search-inner__item btn-filterSearch ">
+                            <div class="form-control btn-find">
+                                <i class="bi bi-search"></i> Tìm kiếm
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container-small">
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="block-title view-more">
+                        <h3 class="title">Tin tức nổi bật</h3>
+                      </div>
+                      <div class="hot-list">
+                        <a href="#" class="hot-item">
+                            <div class="hot-image">
+                                <img src="vendor/images/news/close-up-siblings-with-devices.jpg" alt="">
+                            </div>
+                            <h4>Analytical thinking là gì? 6 bước cải thiện tư duy phân tích</h4>
+                            <div class="hot-desc">
+                                Hầu hết chúng ta thường chỉ cảm thấy không thoải mái một chút khi ở một mình trong thời gian ngắn hay trong tình huống  mái một chút khi ở một mình trong thời gian ngắn hay trong tình huống 
+                            </div>
+                            <div class="hot-author">
+                                
+                            </div>
+                        </a>
+                      </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+        <script src="vendor/js/library/jquery.js"></script>
+        <script src="vendor/js/library/lib-slick.js"></script>
+        <script src="vendor/js/slick.js"></script> 
+        <script src="vendor/js/library/select2.js"></script>
+        <script src="vendor/js/main.js"></script>
+        <script src="vendor/js/tuyen-dung.js"></script>
+</body>
+</html>
