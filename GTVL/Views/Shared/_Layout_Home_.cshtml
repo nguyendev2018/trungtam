@@ -1,0 +1,486 @@
+﻿@{
+    ViewBag.Title = "_Layout_Home_";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRUNG TÂM VIỆC LÀM BÌNH DƯƠNG</title>
+    <link rel="icon" type="image/x-icon" href="~/Template/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" type="text/css" href=" ~/Template/style/slick.css" />
+    <link rel="stylesheet" href="~/Template/style/search.css">
+    <link rel="stylesheet" href="~/Template/style/main.css" />
+    <link rel="stylesheet" href="~/Template/js/main.js" />
+</head>
+<body>
+    <div class="overlay-black"></div>
+    <div class="modal" id="myModal">
+        <span class="close"><i class="bi bi-x"></i></span>
+        <img src="~/Template/images/modal.png" class="modal-img" alt="modal">
+    </div>
+    <a href="#" class="scroll-up">
+        <i class="bi bi-chevron-up"></i>
+    </a>
+    <div class="header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-left header-spacing">
+                    <a class="header-left__link" href="tel:(0274) 3.899.019">
+                        <i class="bi bi-telephone"></i>
+                        <span>(0274) 3.899.019</span>
+                    </a>
+                    <a class="header-left__link" href="mailto:cantho@vietnamhr.vn">
+                        <i class="bi bi-envelope-at"></i>
+                        <span>phonggtvlbd@gmail.com</span>
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="header-right__auth header-spacing">
+                        <a href="#dangnhap">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                        <a href="#dangky">
+                            <i class="bi bi-person"></i>
+                            <span>Đăng ký</span>
+                        </a>
+                    </div>
+                    <div class="header-right__flag header-spacing">
+                        <div class="flag-lag">
+                            <img src="~/Template/images/flag-vietnam.png" alt="Tiếng Việt" />
+                        </div>
+                        <div class="flag-lag">
+                            <img src="~/Template/images/flag-english.png" alt="Tiếng Anh" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom container">
+            <a class="header-logo">
+                <img src="~/Template/images/Logo.png"
+                     alt="Trung Tâm Dịch Vụ Việc Làm Bình Dương" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG" />
+            </a>
+            <div class="navbar">
+                <div class="navbar-toggle">
+                    <div class="navbar-bars"></div>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-header">
+                        <a href="#">
+                            <img src="~/Template/images/Logo.png" title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG" alt="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG">
+                        </a>
+
+                    </div>
+                    <a class="navbar-item" href="/Home">
+                        <img src="~/Template/images/header-bottom/icon-home.png"
+                             class="navbar-icon"
+                             alt="Trang Chủ" />
+                        <i class="bi bi-chevron-right"></i>
+                        Trang Chủ
+                    </a>
+                    <a class="navbar-item" href="/Ung-Vien" id="CanMenu">
+                        <img src="~/Template/images/header-bottom/icon-vieclam.png"
+                             class="navbar-icon"
+                             alt="Người Tìm Việc" />
+                        <i class="bi bi-chevron-right"></i>
+                        Người Tìm Việc
+                    </a>
+                    <a class="navbar-item" href="/Gioi-Thieu">
+                        <img src="~/Template/images/header-bottom/icon-timviec.png"
+                             class="navbar-icon"
+                             alt="Giới Thiệu" />
+                        <i class="bi bi-chevron-right"></i>
+                        Giới Thiệu
+                    </a>
+                    <a class="navbar-item" href="/Tuyen-Dung" id="JobMenu">
+                        <img src="~/Template/images/header-bottom/icon-job.png"
+                             class="navbar-icon"
+                             alt="Tuyển Dụng" />
+                        <i class="bi bi-chevron-right"></i>
+                        Tuyển Dụng
+                    </a>
+                    <a class="navbar-item"
+                       title="Sàn online là tính năng mới để kết nối NLD và DN. Bạn sẻ được chat trực tiếp với ứng viên hoặc doanh nghiệp">
+                        <img src="~/Template/images/header-bottom/icon-sanonline.jpg"
+                             class="navbar-icon"
+                             alt="Sàn Oline" />
+                        <i class="bi bi-chevron-right"></i>
+                        Sàn Online
+                    </a>
+                    <a class="navbar-item" href="/Van-Ban">
+                        <img src="~/Template/images/header-bottom/icon-book.png"
+                             class="navbar-icon"
+                             alt="Văn Bản" />
+                        <i class="bi bi-chevron-right"></i>
+                        Văn Bản
+                    </a>
+                    <a class="navbar-item" href="/News/NewsByCategory/3330">
+                        <img src="~/Template/images/header-bottom/icon-hanhchinh.png"
+                             class="navbar-icon"
+                             alt="TT Hành Chính" />
+                        <i class="bi bi-chevron-right"> </i>
+                        TT Hành Chính
+                    </a>
+                    <a class="navbar-item" href="/Tin-Tuc" id="NewsMenu">
+                        <img src="~/Template/images/header-bottom/icon-news.png"
+                             alt="Tin Tức"
+                             class="navbar-icon" />
+                        <i class="bi bi-chevron-right"></i>
+                        Tin Tức
+                    </a>
+                    <a class="navbar-item navbar-item--sign"
+                       href="/Tin-Tuc"
+                       id="NewsMenu">
+                        <i class="bi bi-chevron-right"></i>
+                        Đăng nhập
+                    </a>
+                    <a class="navbar-item navbar-item--sign"
+                       href="/Tin-Tuc"
+                       id="NewsMenu">
+                        <i class="bi bi-chevron-right"></i>
+                        Đăng ký
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-search">
+            <div class="header-search__top">
+                <div class="container">
+                    <div class="header-search__list">
+                        <div class="header-search__item">
+                            <h1 class="header-title">VIỆC LÀM BÌNH DƯƠNG</h1>
+                            <h2 class="header-subTitle">
+                                <i>Sàn Giao Dịch Việc Làm Tại Bình Dương</i>
+                            </h2>
+                        </div>
+                        <div class="header-search__item">
+                            <div class="job-market">
+                                <div class="job-market__top">
+                                    <div class="job-market__title">
+                                        <img src="~/Template/images/search.svg"
+                                             alt="search"
+                                             class="job-market__icon" />
+                                        Thị trường việc làm hôm nay :
+                                    </div>
+                                    <div class="job-market__date">23/07/2024</div>
+                                </div>
+                                <div class="job-market__bottom">
+                                    <h3 class="job-market__item">
+                                        <span class="job-market__title">
+                                            Việc làm đang tuyển :
+                                        </span>
+                                        <a href="/viec-lam-moi-nhat" class="job-market__value">
+                                            1.432
+                                        </a>
+                                    </h3>
+                                    <div class="job-market__divider"></div>
+                                    <h3 class="job-market__item">
+                                        <span class="job-market__title">
+                                            Việc làm hôm nay :
+                                        </span>
+                                        <a href="/viec-lam-can-tho-moi-nhat"
+                                           class="job-market__value">
+                                            26
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-form">
+                <div class="search-bar">
+                    <form name="frmSearch" id="frmSearch">
+                        <div class="container">
+                            <div class="search-inner">
+                                <div class="search-inner__list">
+                                    <div class="search-inner__search search-inner__item  search-group_float">
+                                        <div class="search-inner__searchCol">
+                                            <div class="form-group search-group_float__item noidung">
+                                                <input type="text"
+                                                       class="form-control"
+                                                       placeholder="Tiêu đề công việc, vị trí..."
+                                                       value=""
+                                                       id="searchStr" />
+                                            </div>
+                                        </div>
+                                        <div class="search-inner__searchCol">
+                                            <div class="form-group  search-group_float__item search-group_float__select nganhnghe">
+                                                <select class="form-control select2 vieclam-select2"
+                                                        multiple=""
+                                                        data-wrapper=""
+                                                        name="searchNN"
+                                                        id="searchNN"
+                                                        data-placeholder="Lọc theo ngành nghề"
+                                                        size="1">
+                                                    <option class="option-items " value="-1">
+                                                        Ngành nghề
+                                                    </option>
+
+                                                    <option class="option-items " value="24">
+                                                        Bảo vệ
+                                                    </option>
+                                                    <option class="option-items " value="10">
+                                                        Hóa học
+                                                    </option>
+                                                    <option class="option-items " value="38">
+                                                        Bất động sản
+                                                    </option>
+                                                    <option class="option-items " value="56">
+                                                        Làm đẹp
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-inner__filter search-inner__item filter">
+                                        <div class="search-inner__filterCol">
+                                            <div class="form-group search-group_float__item diadiem">
+                                                <select class="form-control vieclam-select2 select2"
+                                                        name=""
+                                                        multiple=""
+                                                        data-wrapper=""
+                                                        id="searchDD"
+                                                        data-placeholder="Lọc theo địa điểm"
+                                                        size="1">
+                                                    <option class="option-items " value="-1">
+                                                        Địa điểm - Tất cả
+                                                    </option>
+                                                    <option class="option-items " value="1">
+                                                        Cần Thơ
+                                                    </option>
+                                                    <option class="option-items " value="2">
+                                                        Vĩnh Long
+                                                    </option>
+                                                    <option class="option-items " value="8">
+                                                        Hậu Giang
+                                                    </option>
+                                                    <option class="option-items " value="71">
+                                                        Khác
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="search-inner__filterCol">
+                                            <button type="submit" class="form-control btn-find btn-primary hidden-sm">
+                                                Tìm kiếm
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="search-inner__item btn-filterSearch">
+                                        <div class="form-control btn-find btn-filter show-sm" id="btn-filter">
+                                            <i class="bi bi-funnel"></i> Lọc nâng cao
+                                        </div>
+                                        <div class="form-control btn-find show-sm">
+                                            <i class="bi bi-search"></i> Tìm kiếm
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="collapse-filter">
+                                    <div class="search-collapse">
+                                        <div class="collapse-list">
+                                            <div class="search-group">
+                                                <div class="form-group search-group_float__item salary">
+                                                    <select class="form-control vieclam-select2 select2"
+                                                            name="salary"
+                                                            multiple=""
+                                                            data-wrapper=""
+                                                            id="searchSalary"
+                                                            data-placeholder="Lọc theo mức lương">
+                                                        <option value="1">Thỏa thuận</option>
+                                                        <option value="2">Dưới 3 triệu</option>
+                                                        <option value="3">3 - 5 triệu</option>
+                                                        <option value="4">5 - 7 triệu</option>
+                                                        <option value="5">7 - 10 triệu</option>
+                                                        <option value="6">10 - 12 triệu</option>
+                                                        <option value="7">12 - 15 triệu</option>
+                                                        <option value="8">15 - 20 triệu</option>
+                                                        <option value="9">20 - 25 triệu</option>
+                                                        <option value="10">25 - 30 triệu</option>
+                                                        <option value="11">Trên 30 triệu</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-group">
+                                                <div class="form-group search-group_float__item  ranks">
+                                                    <select class="form-control vieclam-select2 select2"
+                                                            name="ranks"
+                                                            multiple=""
+                                                            data-wrapper=""
+                                                            id="searchRank"
+                                                            data-placeholder="Lọc theo cấp bậc"
+                                                            size="1">
+                                                        <option value="1">Sinh viên</option>
+                                                        <option value="2">Nhân viên</option>
+                                                        <option value="3">Trưởng nhóm</option>
+                                                        <option value="4">Quản lý</option>
+                                                        <option value="5">Điều hành cấp cao</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-group">
+                                                <div class="form-group search-group_float__item  type">
+                                                    <select class="form-control vieclam-select2 select2"
+                                                            name="type"
+                                                            multiple=""
+                                                            data-wrapper=""
+                                                            id="searchType"
+                                                            data-placeholder="Lọc theo loại hình công việc"
+                                                            size="1">
+                                                        <option value="1">Toàn thời gian</option>
+                                                        <option value="2">Bán thời gian</option>
+                                                        <option value="3">Thực tập</option>
+                                                        <option value="5">Remote - Làm việc từ xa</option>
+                                                        <option value="4">Khác</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-group">
+                                                <div class="form-group search-group_float__item experience">
+                                                    <select class="form-control vieclam-select2 select2"
+                                                            name="experience"
+                                                            multiple=""
+                                                            data-wrapper=""
+                                                            id="searchKinhNghiem"
+                                                            data-placeholder="Lọc theo kinh nghiệm"
+                                                            size="1">
+                                                        <option value="1">Không yêu cầu</option>
+                                                        <option value="8">Dưới 1 năm</option>
+                                                        <option value="2">1 năm</option>
+                                                        <option value="3">2 năm</option>
+                                                        <option value="4">3 năm</option>
+                                                        <option value="5">4 năm</option>
+                                                        <option value="6">5 năm</option>
+                                                        <option value="7">Trên 5 năm</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody();
+
+    <section class="footer content-padding">
+        <div class="container">
+            <div class="footer-list">
+                <div class="footer-item first">
+                    <h4>Về chúng tôi</h4>
+                    <a href="#"><img src="~/Template/images/LogoTT.png" alt="TRUNG TÂM VIỆC LÀM DỊCH VỤ BÌNH DƯƠNG" title="TRUNG TÂM VIỆC LÀM DỊCH VỤ BÌNH DƯƠNG"></a>
+                    <p>Trung tâm dịch vụ việc làm Bình Dương Tuyển dụng Giới thiệu việc làm "miễn phí" và Giải quyết chế độ BHTN Đào tạo nghề "miễn phí"</p>
+                </div>
+                <div class="footer-item second">
+                    <h4>Liên hệ với chi nhánh</h4>
+                    <ul>
+                        <li><i class="bi bi-geo"></i><span> Trụ sở chính :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                        <li><i class="bi bi-telephone"></i> <span>Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
+                    </ul>
+                    <ul>
+                        <li><i class="bi bi-geo"></i><span> Chi nhánh Dĩ An :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                        <li><i class="bi bi-telephone"></i> <span>Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
+                    </ul>
+                    <ul>
+                        <li><i class="bi bi-geo"></i><span> Chi nhánh Tân Định :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                        <li><i class="bi bi-telephone"></i> <span>Số điện thoại : </span>  <a href="tel:(0274) 3.899.019" class="link">(0274) 3.899.019</a></li>
+                    </ul>
+                    <ul>
+                        <li><i class="bi bi-geo"></i><span> Chi nhánh Tân Uyên :    369 Đại Lộ Bình Dương, KP.Hòa Lân, Thuận Giao, Thuận An, Bình Dương</span></li>
+                        <li><i class="bi bi-telephone"></i> <span>Số điện thoại : </span>  <a href="tel:(0274) 3.899.019">(0274) 3.899.019</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="footer-item third">
+                    <h4>Liên kết website</h4>
+                    <div class="footer-item--website">
+                        <a href="#" class="img-col link">
+                            <img src="~/Template/images/footer/1.png" alt="liên kết website">
+                        </a>
+                        <a href="#" class="img-col link">
+                            <img src="~/Template/images/footer/1.png" alt="liên kết website">
+                        </a>
+                        <a href="#" class="img-col link">
+                            <img src="~/Template/images/footer/1.png" alt="liên kết website">
+                        </a>
+                        <a href="#" class="img-col link">
+                            <img src="~/Template/images/footer/1.png" alt="liên kết website">
+                        </a>
+                        <a href="#" class="img-col link">
+                            <img src="~/Template/images/footer/1.png" alt="liên kết website">
+                        </a>
+                        <a href="#" class="img-col link">
+                            <img src="~/Template/images/footer/1.png" alt="liên kết website">
+                        </a>
+                    </div>
+                    <div class="footer-item--data">
+                        <div class="data-col">
+                            <i class="bi bi-person-fill"></i>
+                            <span>Đang Tham Gia : 18550</span>
+                        </div>
+                        <div class="data-col right">
+                            <i class="bi bi-calendar-event"></i>
+                            <span>Hôm nay : 18550</span>
+                        </div>
+                        <div class="data-col">
+                            <i class="bi bi-calendar"></i>
+                            <span>Tổng số : 18550</span>
+                        </div>
+                        <div class="data-col right">
+                            <i class="bi bi-card-list"></i>
+                            <span>Hôm qua : 18550</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-item four">
+                    <h4>Mạng xã hội</h4>
+                    <div class="social-col">
+                        <a href="https://www.facebook.com/profile.php?id=100067159210651" class="icon-facebook link" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" class="icon-youtube link" target="_blank">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="" class="icon-zalo link" target="_blank">
+                            <img src="~/Template/images/footer/vector-zalo.svg" alt="">
+                        </a>
+                        <a href="https://play.google.com/store/search?q=vi%E1%BB%87c%20l%C3%A0m%20b%C3%ACnh%20d%C6%B0%C6%A1ng&c=apps&hl=vi" class="icon-android link" target="_blank">
+                            <i class="bi bi-android2"></i>
+                        </a>
+                        <a href="#" class="icon-apple link">
+                            <i class="bi bi-apple"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-clean">
+        <div class="container">
+            <p>© 2024 TTDVVL Bình Dương. All rights reserved. </p>
+        </div>
+    </section>
+
+</body>
+    <script src="~/Template/js/library/jquery.js"></script>
+    <script src="~/Template/js/library/lib-slick.js"></script>
+    <script src="~/Template/js/slick.js"></script>
+    <script src="~/Template/js/library/select2.js"></script>
+    <script src="~/Template/js/main.js"></script>
+</html>
+

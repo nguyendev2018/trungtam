@@ -1,0 +1,17 @@
+﻿@model List<Lib_GTVL.EF.News>
+@* Model là danh sách tin tức*@
+
+        <h4>Tin mới</h4>
+        <div class="hot-news--list">
+            @foreach (var item in Model)
+            {
+                <a href="/Tin-Tuc/@item.ImagePath/@item.NewId" class="hot-news--item">
+                    <div class="news-item__img">
+                        <img src="@item.ImagePath" alt="news-1">
+                    </div>
+                    <div class="news-item__content">
+                        <span class="entry-title">@item.Title</span>
+                    </div>
+                </a>
+            }
+        </div>

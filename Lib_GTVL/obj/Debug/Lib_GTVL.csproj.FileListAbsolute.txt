@@ -1,0 +1,10 @@
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\bin\Debug\Lib_GTVL.dll.config
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\bin\Debug\Lib_GTVL.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\bin\Debug\Lib_GTVL.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\obj\Debug\Lib_GTVL.dll
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\obj\Debug\Lib_GTVL.pdb
+C:\Users\Administrator\documents\visual studio 2015\Projects\GTVL\Lib_GTVL\obj\Debug\Lib_GTVL.csprojResolveAssemblyReference.cache
