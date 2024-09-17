@@ -4,6 +4,24 @@ $('.employer-list').slick({
     prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
     nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
 });
+$('.page-news--slick').slick({
+    arrows: true,
+    slidesToShow: 3,
+      prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
+    nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>",
+    responsive: [
+        {
+        breakpoint: 992,
+        settings: {
+        slidesToShow: 2,
+        }
+        },{
+        breakpoint: 552,
+        settings: {
+        slidesToShow: 2,
+        }
+        }]
+});
 
 $('.video-class').slick({
     arrows: true,

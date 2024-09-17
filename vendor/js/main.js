@@ -29,16 +29,16 @@ buttonsMore.forEach((btnMore, index) => {
   });
 });
 // scroll header
-document.addEventListener("scroll", () => {
-  if (window.scrollY > 400) {
-    menuHeader.classList.add("header-bottom__scrollY");
-    scrollUp.classList.add('active')
+// document.addEventListener("scroll", () => {
+//   if (window.scrollY > 400) {
+//     menuHeader.classList.add("header-bottom__scrollY");
+//     scrollUp.classList.add('active')
    
-  } else {
-    menuHeader.classList.remove("header-bottom__scrollY");
-    scrollUp.classList.remove('active')
-  }
-});
+//   } else {
+//     menuHeader.classList.remove("header-bottom__scrollY");
+//     scrollUp.classList.remove('active')
+//   }
+// });
 videoList.forEach(video => {
   
   video.onclick = () =>{
