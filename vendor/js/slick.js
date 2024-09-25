@@ -1,13 +1,16 @@
+
 $('.employer-list').slick({
     arrows: true,
     // autoplay : true,
     prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
     nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>"
 });
+
 $('.page-news--slick').slick({
     arrows: true,
+    autoplay: true,
     slidesToShow: 3,
-      prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
+    prevArrow:"<button class='button-slick slick-prev'><i class='bi bi-chevron-left icon-prev'></i></button>",
     nextArrow:"<button class='button-slick slick-next'><i class='bi bi-chevron-right icon-next'></i></button>",
     responsive: [
         {

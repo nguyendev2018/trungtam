@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tin Tức</title>
+    <link rel="icon" type="image/x-icon" href="vendor/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="vendor/style/slick.css" />
+    <link rel="stylesheet" href="vendor/style/search.css" />
+    <link rel="stylesheet" href="vendor/style/main.css" />
+    <link rel="stylesheet" href="vendor/js/main.js" />
+  </head>
+
+  <body>
+    <a href="#" class="scroll-up">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+    <div class="header">
+      <div class="header-top">
+        <div class="header-container">
+          <div class="header-left header-spacing">
+            <a class="header-left__link" href="tel:(0274) 3.899.019">
+              <i class="bi bi-telephone"></i>
+              <span>(0274) 3.899.019</span>
+            </a>
+            <a class="header-left__link" href="mailto:cantho@vietnamhr.vn">
+              <i class="bi bi-envelope-at"></i>
+              <span>phonggtvlbd@gmail.com</span>
+            </a>
+          </div>
+          <div class="header-right">
+            <div class="header-right__auth header-spacing">
+              <a href="#dangnhap">
+                <i class="bi bi-box-arrow-in-right"></i>
+                <span>Đăng nhập</span>
+              </a>
+              <a href="#dangky">
+                <i class="bi bi-person"></i>
+                <span>Đăng ký</span>
+              </a>
+            </div>
+            <div class="header-right__flag header-spacing">
+              <div class="flag-lag">
+                <img src="vendor/images/flag-vietnam.png" alt="Tiếng Việt" />
+              </div>
+              <div class="flag-lag">
+                <img src="vendor/images/flag-english.png" alt="Tiếng Anh" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom container">
+        <a href="#" class="header-logo">
+          <img
+            src="vendor/images/Logo.png"
+            alt="Trung Tâm Dịch Vụ Việc Làm Bình Dương"
+            title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
+          />
+        </a>
+        <div class="navbar">
+          <div class="navbar-toggle">
+            <div class="navbar-bars"></div>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-header">
+              <a href="#">
+                <img
+                  src="vendor/images/Logo.png"
+                  title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
+                  alt="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
+                />
+              </a>
+            </div>
+            <a class="navbar-item" href="/Home">
+              <img
+                src="vendor/images/header-bottom/icon-home.png"
+                class="navbar-icon"
+                alt="Trang Chủ"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Trang Chủ
+            </a>
+            <a class="navbar-item" href="/Ung-Vien" id="CanMenu">
+              <img
+                src="vendor/images/header-bottom/icon-vieclam.png"
+                class="navbar-icon"
+                alt="Người Tìm Việc"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Người Tìm Việc
+            </a>
+            <a class="navbar-item" href="/Gioi-Thieu">
+              <img
+                src="vendor/images/header-bottom/icon-timviec.png"
+                class="navbar-icon"
+                alt="Giới Thiệu"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Giới Thiệu
+            </a>
+            <a class="navbar-item" href="/Tuyen-Dung" id="JobMenu">
+              <img
+                src="vendor/images/header-bottom/icon-job.png"
+                class="navbar-icon"
+                alt="Tuyển Dụng"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Tuyển Dụng
+            </a>
+            <a
+              class="navbar-item"
+              title="Sàn online là tính năng mới để kết nối NLD và DN. Bạn sẻ được chat trực tiếp với ứng viên hoặc doanh nghiệp"
+            >
+              <img
+                src="vendor/images/header-bottom/icon-sanonline.jpg"
+                class="navbar-icon"
+                alt="Sàn Oline"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Sàn Online
+            </a>
+            <a class="navbar-item" href="/Van-Ban">
+              <img
+                src="vendor/images/header-bottom/icon-book.png"
+                class="navbar-icon"
+                alt="Văn Bản"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Văn Bản
+            </a>
+            <a class="navbar-item" href="/News/NewsByCategory/3330">
+              <img
+                src="vendor/images/header-bottom/icon-hanhchinh.png"
+                class="navbar-icon"
+                alt="TT Hành Chính"
+              />
+              <i class="bi bi-chevron-right"></i>
+              TT Hành Chính
+            </a>
+            <a class="navbar-item" href="/Tin-Tuc" id="NewsMenu">
+              <img
+                src="vendor/images/header-bottom/icon-news.png"
+                alt="Tin Tức"
+                class="navbar-icon"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Tin Tức
+            </a>
+            <a
+              class="navbar-item navbar-item--sign"
+              href="/Tin-Tuc"
+              id="NewsMenu"
+            >
+              <i class="bi bi-chevron-right"></i>
+              Đăng nhập
+            </a>
+            <a
+              class="navbar-item navbar-item--sign"
+              href="/Tin-Tuc"
+              id="NewsMenu"
+            >
+              <i class="bi bi-chevron-right"></i>
+              Đăng ký
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-search">
+        <div class="header-search__top">
+          <div class="container">
+            <div class="header-search__list">
+              <div class="header-search__item">
+                <h1 class="header-title">VIỆC LÀM BÌNH DƯƠNG</h1>
+                <h2 class="header-subTitle">
+                  <i>Sàn Giao Dịch Việc Làm Tại Bình Dương</i>
+                </h2>
+              </div>
+              <div class="header-search__item">
+                <div class="job-market">
+                  <div class="job-market__top">
+                    <div class="job-market__title">
+                      <img
+                        src="vendor/images/search.svg"
+                        alt="search"
+                        class="job-market__icon"
+                      />
+                      Thị trường việc làm hôm nay :
+                    </div>
+                    <div class="job-market__date">23/07/2024</div>
+                  </div>
+                  <div class="job-market__bottom">
+                    <h3 class="job-market__item">
+                      <span class="job-market__title">
+                        Việc làm đang tuyển :
+                      </span>
+                      <a href="/viec-lam-moi-nhat" class="job-market__value">
+                        1.432
+                      </a>
+                    </h3>
+                    <div class="job-market__divider"></div>
+                    <h3 class="job-market__item">
+                      <span class="job-market__title">
+                        Việc làm hôm nay :
+                      </span>
+                      <a
+                        href="/viec-lam-can-tho-moi-nhat"
+                        class="job-market__value"
+                      >
+                        26
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-form">
+          <div class="search-bar">
+            <form name="frmSearch" id="frmSearch">
+              <div class="container">
+                <div class="search-inner">
+                  <div class="search-inner__list">
+                    <div
+                      class="search-inner__search search-inner__item search-group_float"
+                    >
+                      <div class="search-inner__searchCol">
+                        <div
+                          class="form-group search-group_float__item noidung"
+                        >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Tiêu đề công việc, vị trí..."
+                            value=""
+                            id="searchStr"
+                          />
+                        </div>
+                      </div>
+                      <div class="search-inner__searchCol">
+                        <div
+                          class="form-group search-group_float__item search-group_float__select nganhnghe"
+                        >
+                          <select
+                            class="form-control select2 vieclam-select2"
+                            multiple=""
+                            data-wrapper=""
+                            name="searchNN"
+                            id="searchNN"
+                            data-placeholder="Lọc theo ngành nghề"
+                            size="1"
+                          >
+                            <option class="option-items" value="-1">
+                              Ngành nghề
+                            </option>
+                            <option class="option-items" value="24">
+                              Bảo vệ
+                            </option>
+                            <option class="option-items" value="10">
+                              Hóa học
+                            </option>
+                            <option class="option-items" value="38">
+                              Bất động sản
+                            </option>
+                            <option class="option-items" value="56">
+                              Làm đẹp
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-inner__filter search-inner__item filter">
+                      <div class="search-inner__filterCol">
+                        <div
+                          class="form-group search-group_float__item diadiem"
+                        >
+                          <select
+                            class="form-control vieclam-select2 select2"
+                            name=""
+                            multiple=""
+                            data-wrapper=""
+                            id="searchDD"
+                            data-placeholder="Lọc theo địa điểm"
+                            size="1"
+                          >
+                            <option class="option-items" value="-1">
+                              Địa điểm - Tất cả
+                            </option>
+                            <option class="option-items" value="1">
+                              Cần Thơ
+                            </option>
+                            <option class="option-items" value="2">
+                              Vĩnh Long
+                            </option>
+                            <option class="option-items" value="8">
+                              Hậu Giang
+                            </option>
+                            <option class="option-items" value="71">
+                              Khác
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="search-inner__filterCol">
+                        <button
+                          type="submit"
+                          class="form-control btn-find btn-primary hidden-sm"
+                        >
+                          Tìm kiếm
+                        </button>
+                      </div>
+                      <div class="search-inner__item btn-filterSearch">
+                        <div class="form-control btn-find">
+                          <i class="bi bi-search"></i> Tìm kiếm
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-news detail">
+      <div class="container">
+        <div class="page-news--list">
+          <div class="page-news--infor">
+            <section class="content-padding--news">
+              <div class="block-news__detail">
+                <h1>
+                  CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI DỊCH VỤ XUẤT NHẬP KHẨU HAIXIMA
+                  TUYỂN DỤNG
+                </h1>
+                <div class="advise-block">
+                  <div class="view-date">
+                    <i class="bi bi-person-fill"></i>
+                    <span>Super admin</span>
+                  </div>
+                  <div class="view-date">
+                    <i class="bi bi-calendar-minus"></i>
+                    <span>10/7/2024</span>
+                  </div>
+                  <div class="view-date">
+                    <i class="bi bi-eye"></i>
+                    <span>113</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <a
+                      data-link="newPdf"
+                      style="color: black"
+                      class="link_pdf link-item active"
+                      >link newPDF</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-link="newText"
+                      style="color: black"
+                      class="link_text link-item"
+                      >link newText</a
+                    >
+                  </li>
+                </ul>
+                <!-- element-pdf -->
+                <div class="new-pdf new-item" id="newPdf">
+                  <div id="controls">
+                    <div class="block-page">
+                      <button class="btn-print" id="prev-page">
+                        <span>Trang trước</span>
+                        <i class="bi bi-chevron-double-left"></i>
+                      </button>
+                      <div class="block-page--number">
+                        <input type="number" id="page-input" value="1" min="1" />
+                        <span id="page-count"></span>
+                      </div>
+                      <button class="btn-print" id="next-page">
+                        <span>Trang sau</span>
+                        <i class="bi bi-chevron-double-right"></i>
+                      </button>
+                    </div>
+                    <div class="block-right">
+                      <div class="block-zoom">
+                        <button id="zoom-in" class="zoom-pdf">
+                          <span>Phóng to</span> <i class="bi bi-zoom-in"></i>
+                        </button>
+                        <button id="zoom-out" class="zoom-pdf">
+                          <span>Phóng nhỏ</span><i class="bi bi-zoom-out"></i>
+                        </button>
+                      </div>
+                      <button class="btn-send btn-primary" id="download-pdf">
+                        <span>Tải xuống</span> <i class="bi bi-download"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="pdf-container">
+                    <canvas id="pdf-render"></canvas>
+                  </div>
+                </div>
+                <div class="new-text new-item" id="newText" style="display: none;">
+                  <div class="single-feature">
+                    <div class="post-image">
+                      <img
+                        src="https://smartmag.theme-sphere.com/smart-times/wp-content/uploads/sites/30/2022/03/daniel-eledut-yk9qMOst4jk-unsplash-1024x682.jpg"
+                        alt="news-1"
+                      />
+                    </div>
+                    <div class="post-content">
+                      <p>
+                        To understand the new politics stance and other pro
+                        nationals of recent times, we should look to Silicon
+                        Valley and the quantified movement of the latest
+                        generation.
+                      </p>
+                      <p>
+                        In the high-profile case of US-based journalist Peter
+                        Wilson, 16-year-old American journalist Clifford McGraw
+                        and 20-year-old British freelance journalist Jeremy Leslie
+                        have been charged with conspiring to violate the UK
+                        Foreign Office’s <a href="#">anti-terror laws</a>, a
+                        charge he denies. On Monday, UK attorney Andy McDonald
+                        revealed that he had spoken.
+                      </p>
+                      <figure class="block-pullquote alignwide">
+                        <blockquote>
+                          <p>
+                            I have lived here since I am a little boy, so when I
+                            think about it, I say to myself: “There is nothing
+                            particular to be proud of, it was a really good place
+                            for us to live.
+                          </p>
+                          <cite>McDonald’s Jr.</cite>
+                        </blockquote>
+                      </figure>
+                      <p>
+                        Mr McDonald also said: “I believe in Britain, I believe in
+                        a strong and independent community, and I stand by every
+                        member of the people of Scotland.
+                      </p>
+                      <h3 class="block-heading">What is their defense?</h3>
+                      <p>
+                        “It is a country of strong and independent borders and the
+                        strong people in Scotland must protect our country.”
+                      </p>
+                      <p>
+                        A few months ago, Rob told a conference at Microsoft that
+                        the company would be making inroads into smart TVs and
+                        other wearables by 2020 and is on the verge of releasing a
+                        consumer version of its HoloLens.
+                      </p>
+                      <p>
+                        After this, senators were given twenty hours to ask
+                        questions of the two sides.
+                      </p>
+                      <ul class="block-list">
+                        <li>
+                          <a href="#"
+                            >Anthony Zucker: Why there could be a speedy end</a
+                          >
+                        </li>
+                        <li>Did Jane’s words at rally incite violence?</li>
+                      </ul>
+                      <p>
+                        He offered some more details about Microsoft’s vision for
+                        smart TVs, though this would come as no surprise given the
+                        company’s deep pockets and deep pockets for other smart
+                        devices and things that it’s built to support.
+                      </p>
+                      <div class="block-imgcaption">
+                        <img
+                          src="https://smartmag.theme-sphere.com/smart-times/wp-content/uploads/sites/30/2022/03/Depositphotos_410258952_XL-1-1024x683.jpg"
+                          alt=""
+                        />
+                        <figcaption>
+                          Members of the European Parliament and Commission wear
+                          face mask.
+                        </figcaption>
+                      </div>
+                      <p>Capitol riots timeline: How the day unfolded.</p>
+                      <ul class="block-list">
+                        <li>
+                          <strong>Riot’s timeline: How the day unfolded</strong>.
+                          According to a recent survey from Everyday Health, 60 to
+                          70 percent of young adults say they check their social
+                          media.
+                        </li>
+                        <li>
+                          <strong>Police describe a ‘medieval battle’</strong>. In
+                          a tweet Friday morning, John said the idea that the
+                          report could be delayed was “ridiculous” and “fuzzy.”
+                        </li>
+                        <li>
+                          <strong>Sanity prevails; slowly but surely.</strong>. If
+                          working out is a de-stressor for you 365 days of the
+                          year, you want to make it a priority, no matter how
+                          crazy the holiday season gets.”
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </section>
+            <section class="content-padding--comments">
+              <div class="block-title">
+                <h3 class="title">Bình luận</h3>
+                <a href="job-seeker.html" target="_blank" class="right link">
+                </a>
+              </div>
+              <div id="comments">
+                <div class="block-comment">
+                  <div class="comment-avatar">
+                    <img
+                      src="https://cheerup.theme-sphere.com/beauty/wp-content/uploads/sites/3/2016/05/admin-avatar.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-info">
+                    <div class="comment-meta">
+                      <span class="comment-author"> Sam Doe </span>
+                      on
+                      <time pubdate="" datetime="2022-03-18T08:00:47+00:00"
+                        >Mar 18, 2022 8:00 am</time
+                      >
+                    </div>
+                    <div class="comment-content">
+                      <p>
+                        That far ground rat pure from newt far panther crane
+                        lorikeet overlay alas cobra across much gosh less
+                        goldfinch ruthlessly alas examined and that more and the
+                        ouch jeez.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-comment">
+                  <div class="comment-avatar">
+                    <img
+                      src="https://cheerup.theme-sphere.com/beauty/wp-content/uploads/sites/3/2016/05/admin-avatar.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-info">
+                    <div class="comment-meta">
+                      <span class="comment-author"> Sam Doe </span>
+                      on
+                      <time pubdate="" datetime="2022-03-18T08:00:47+00:00"
+                        >Mar 18, 2022 8:00 am</time
+                      >
+                    </div>
+                    <div class="comment-content">
+                      <p>
+                        That far ground rat pure from newt far panther crane
+                        lorikeet overlay alas cobra across much gosh less
+                        goldfinch ruthlessly alas examined and that more and the
+                        ouch jeez.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form action="" method="post">
+                <div class="grid-cols">
+                  <div class="form-group">
+                    <label for="name">Tên </label>
+                    <input type="text" placeholder="Mời bạn nhập tên" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email </label>
+                    <input type="email" placeholder="Mời bạn nhập email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="number">Số điện thoại</label>
+                    <input
+                      type="number"
+                      placeholder="Mời bạn nhập số điện thọai"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="comment">Nhập bình luận</label>
+                  <textarea
+                    name="comment"
+                    cols="45"
+                    rows="8"
+                    id=""
+                    placeholder="Mời bạn nhập bình luận"
+                  ></textarea>
+                </div>
+                <button class="btn-send btn-primary">Gửi Bình Luận</button>
+              </form>
+            </section>
+          </div>
+          <div class="page-news--category">
+            <form action="#">
+              <div class="search">
+                <div class="search-field">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Nhập tìm kiếm vào đây"
+                  />
+                </div>
+                <div class="search-icon">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+            </form>
+            <aside class="popular-category">
+              <div class="block-entry">
+                <div class="title">Danh mục</div>
+                <div class="icon">
+                  <i class="bi bi-arrow-bar-right"></i>&gt;
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Tin tức chung</span>
+                    <div class="count">(1212)</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Tin tức chung</span>
+                    <div class="count">(1212)</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Tin tức chung</span>
+                    <div class="count">(1212)</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Tin tức chung</span>
+                    <div class="count">(1212)</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="bi bi-chevron-right"></i>
+                    <span>Tuyển dụng theo nghị định tháng 06 - 2023</span>
+                    <div class="count">(1212)</div>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <aside class="popular-news">
+              <div class="block-entry">
+                <div class="title">Tin tức nổi bật</div>
+                <div class="icon">
+                  <i class="bi bi-arrow-bar-right"></i>&gt;
+                </div>
+              </div>
+              <a href="#" class="side-item">
+                <div class="image">
+                  <img
+                    src="vendor/images/news/close-up-siblings-with-devices.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="title-post">
+                    How to Spend the Perfect Day on Croatia’sHow to Spend the
+                    Perfect Day on Croatia’sHow to Spend the Perfect Day on
+                    Croatia’s
+                  </h4>
+                  <div class="advise-block">
+                    <div class="view-date">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="view-date">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="side-item">
+                <div class="image">
+                  <img
+                    src="vendor/images/news/Screenshot 2024-09-17 105623.png"
+                    alt=""
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="title-post">
+                    How to Spend the Perfect Day on Croatia’sHow to Spend the
+                    Perfect Day on Croatia’sHow to Spend the Perfect Day on
+                    Croatia’s
+                  </h4>
+                  <div class="advise-block">
+                    <div class="view-date">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="view-date">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="side-item">
+                <div class="image">
+                  <img src="vendor/images/news/Screenshot 20.png" alt="" />
+                </div>
+                <div class="text">
+                  <h4 class="title-post">
+                    How to Spend the Perfect Day on Croatia’sHow to Spend the
+                    Perfect Day on Croatia’sHow to Spend the Perfect Day on
+                    Croatia’s
+                  </h4>
+                  <div class="advise-block">
+                    <div class="view-date">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="view-date">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="side-item">
+                <div class="image">
+                  <img
+                    src="vendor/images/news/close-up-siblings-with-devices.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="text">
+                  <h4 class="title-post">
+                    How to Spend the Perfect Day on Croatia’sHow to Spend the
+                    Perfect Day on Croatia’sHow to Spend the Perfect Day on
+                    Croatia’s
+                  </h4>
+                  <div class="advise-block">
+                    <div class="view-date">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="view-date">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="vendor/js/library/jquery.js"></script>
+  <script src="vendor/js/library/lib-slick.js"></script>
+  <script src="vendor/js/slick.js"></script>
+  <script src="vendor/js/library/select2.js"></script>
+  <script src="vendor/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="vendor/js/pdf.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tabButtons = document.querySelectorAll(".link-item");
+      const tabContents = document.querySelectorAll(".new-item");
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          console.log(tabContents);
+
+          // Hide all tab contents
+          tabContents.forEach((content) => (content.style.display = "none"));
+
+          // Remove 'active' class from all buttons
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+
+          // Show the clicked tab content and add 'active' class
+          const cityName = button.getAttribute("data-link");
+          document.getElementById(cityName).style.display = "block";
+          button.classList.add("active");
+        });
+      });
+    });
+  </script>
+</html>

@@ -59,6 +59,28 @@ html {
         background-color: $primary;
     }
 }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    &:has( label) {
+        text-transform: capitalize;
+        font-weight: bold;
+    }   
+ 
+}
+
+textarea, input {
+   outline: none;
+   padding-left: 10px;
+   padding: 10px;
+   border: 1px solid gray;
+   border-radius: 1px;
+   &:focus {
+    border: 1px solid $primary;
+    }
+}
+
 .preloader {
     display: flex;
     align-items: center;
@@ -407,9 +429,7 @@ h4 {
 }
 .form-control {
     width: 100%;
-    border: none;
     padding: 10px;
-    border-radius: 6px;
 
     &:focus {
         outline: none;
@@ -431,6 +451,12 @@ h4 {
     span {
         margin-left: 4px;
     }
+}
+.btn-send{
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-top: 20px;
+    display: block;
 }
 aside{
     width: 100%;
