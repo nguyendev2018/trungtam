@@ -222,15 +222,13 @@
         </div>
         <div class="header-form">
           <div class="search-bar">
-            <form name="frmSearch" id="frmSearch">
+            <form name="frmSearch" id="frmSearch" >
               <div class="container">
                 <div class="search-inner">
                   <div class="search-inner__list">
-                    <div
-                      class="search-inner__search search-inner__item search-group_float"
-                    >
-                      <div class="search-inner__searchCol">
-                        <div
+                      <div class="search-inner__search search-inner__item  search-group_float">
+                        <div class="search-inner__searchCol">
+                          <div
                           class="form-group search-group_float__item noidung"
                         >
                           <input
@@ -241,10 +239,10 @@
                             id="searchStr"
                           />
                         </div>
-                      </div>
-                      <div class="search-inner__searchCol">
-                        <div
-                          class="form-group search-group_float__item search-group_float__select nganhnghe"
+                        </div>
+                        <div class="search-inner__searchCol">
+                          <div
+                          class="form-group  search-group_float__item search-group_float__select nganhnghe"
                         >
                           <select
                             class="form-control select2 vieclam-select2"
@@ -255,76 +253,174 @@
                             data-placeholder="Lọc theo ngành nghề"
                             size="1"
                           >
-                            <option class="option-items" value="-1">
+                            <option class="option-items " value="-1">
                               Ngành nghề
                             </option>
-                            <option class="option-items" value="24">
+                          
+                            <option class="option-items " value="24">
                               Bảo vệ
                             </option>
-                            <option class="option-items" value="10">
+                            <option class="option-items " value="10">
                               Hóa học
                             </option>
-                            <option class="option-items" value="38">
+                            <option class="option-items " value="38">
                               Bất động sản
                             </option>
-                            <option class="option-items" value="56">
+                            <option class="option-items " value="56">
                               Làm đẹp
                             </option>
                           </select>
                         </div>
-                      </div>
-                    </div>
-                    <div class="search-inner__filter search-inner__item filter">
-                      <div class="search-inner__filterCol">
-                        <div
-                          class="form-group search-group_float__item diadiem"
-                        >
-                          <select
-                            class="form-control vieclam-select2 select2"
-                            name=""
-                            multiple=""
-                            data-wrapper=""
-                            id="searchDD"
-                            data-placeholder="Lọc theo địa điểm"
-                            size="1"
-                          >
-                            <option class="option-items" value="-1">
-                              Địa điểm - Tất cả
-                            </option>
-                            <option class="option-items" value="1">
-                              Cần Thơ
-                            </option>
-                            <option class="option-items" value="2">
-                              Vĩnh Long
-                            </option>
-                            <option class="option-items" value="8">
-                              Hậu Giang
-                            </option>
-                            <option class="option-items" value="71">
-                              Khác
-                            </option>
-                          </select>
                         </div>
                       </div>
-                      <div class="search-inner__filterCol">
-                        <button
-                          type="submit"
-                          class="form-control btn-find btn-primary hidden-sm"
-                        >
-                          Tìm kiếm
-                        </button>
+                      <div class="search-inner__filter search-inner__item filter">
+                          <div class="search-inner__filterCol">
+                            <div
+                            class="form-group search-group_float__item diadiem"
+                          >
+                            <select
+                              class="form-control vieclam-select2 select2"
+                              name=""
+                              multiple=""
+                              data-wrapper=""
+                              id="searchDD"
+                              data-placeholder="Lọc theo địa điểm"
+                              size="1"
+                            >
+                              <option class="option-items " value="-1">
+                                Địa điểm - Tất cả
+                              </option>
+                              <option class="option-items " value="1">
+                                Cần Thơ
+                              </option>
+                              <option class="option-items " value="2">
+                                Vĩnh Long
+                              </option>
+                              <option class="option-items " value="8">
+                                Hậu Giang
+                              </option>
+                              <option class="option-items " value="71">
+                                Khác
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-inner__filterCol">
+                          <button type="submit" class="form-control btn-find btn-primary hidden-sm">
+                            Tìm kiếm
+                          </button>
+                        </div>
                       </div>
-                      <div class="search-inner__item btn-filterSearch">
+                      <div class="search-inner__item btn-filterSearch ">
+                        <div class="form-control btn-find btn-filter" id="btn-filter">
+                          <i class="bi bi-funnel"></i> Lọc nâng cao
+                        </div>              
                         <div class="form-control btn-find">
                           <i class="bi bi-search"></i> Tìm kiếm
+                        </div>            
+                      </div>
+                  </div>
+                  <div class="collapse-filter" id="collapse-btn">
+                    <div class="search-collapse">
+                      <div class="collapse-list">
+                          <div class="search-group">
+                            <div
+                              class="form-group search-group_float__item salary"
+                            >
+                              <select
+                                class="form-control vieclam-select2 select2"
+                                name="salary"
+                                multiple=""
+                                data-wrapper=""
+                                id="searchSalary"
+                                data-placeholder="Lọc theo mức lương"
+                              >
+                                <option value="1">Thỏa thuận</option>
+                                <option value="2">Dưới 3 triệu</option>
+                                <option value="3">3 - 5 triệu</option>
+                                <option value="4">5 - 7 triệu</option>
+                                <option value="5">7 - 10 triệu</option>
+                                <option value="6">10 - 12 triệu</option>
+                                <option value="7">12 - 15 triệu</option>
+                                <option value="8">15 - 20 triệu</option>
+                                <option value="9">20 - 25 triệu</option>
+                                <option value="10">25 - 30 triệu</option>
+                                <option value="11">Trên 30 triệu</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="search-group">
+                            <div
+                              class="form-group search-group_float__item  ranks"
+                            >
+                              <select
+                                class="form-control vieclam-select2 select2"
+                                name="ranks"
+                                multiple=""
+                                data-wrapper=""
+                                id="searchRank"
+                                data-placeholder="Lọc theo cấp bậc"
+                                size="1"
+                              >
+                                <option value="1">Sinh viên</option>
+                                <option value="2">Nhân viên</option>
+                                <option value="3">Trưởng nhóm</option>
+                                <option value="4">Quản lý</option>
+                                <option value="5">Điều hành cấp cao</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="search-group">
+                            <div
+                              class="form-group search-group_float__item  type"
+                            >
+                              <select
+                                class="form-control vieclam-select2 select2"
+                                name="type"
+                                multiple=""
+                                data-wrapper=""
+                                id="searchType"
+                                data-placeholder="Lọc theo loại hình công việc"
+                                size="1"
+                              >
+                                <option value="1">Toàn thời gian</option>
+                                <option value="2">Bán thời gian</option>
+                                <option value="3">Thực tập</option>
+                                <option value="5">Remote - Làm việc từ xa</option>
+                                <option value="4">Khác</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="search-group">
+                            <div
+                              class="form-group search-group_float__item experience"
+                            >
+                              <select
+                                class="form-control vieclam-select2 select2"
+                                name="experience"
+                                multiple=""
+                                data-wrapper=""
+                                id="searchKinhNghiem"
+                                data-placeholder="Lọc theo kinh nghiệm"
+                                size="1"
+                              >
+                                <option value="1">Không yêu cầu</option>
+                                <option value="8">Dưới 1 năm</option>
+                                <option value="2">1 năm</option>
+                                <option value="3">2 năm</option>
+                                <option value="4">3 năm</option>
+                                <option value="5">4 năm</option>
+                                <option value="6">5 năm</option>
+                                <option value="7">Trên 5 năm</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </form>
-          </div>
         </div>
       </div>
     </div>
