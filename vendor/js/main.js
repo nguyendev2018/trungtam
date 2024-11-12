@@ -6,8 +6,6 @@ const menuHeader = document.querySelector(".header-bottom");
 const videoList = document.querySelectorAll(".video-small");
 const iframe = document.querySelector(".video iframe");
 const scrollUp = document.querySelector(".scroll-up");
-const buttonsMore = document.querySelectorAll(".card-body--more");
-const viewsMore = document.querySelectorAll(".card-body--list.view-more")
 const btnFilter  = document.querySelectorAll("#btn-filter");
 
 barsMenu.addEventListener("click", () => {
@@ -22,12 +20,14 @@ function closeMenuMobile() {
   barsMenu.classList.remove("active");
   menuMobile.classList.remove("show");
 }
-buttonsMore.forEach((btnMore, index) => {
+document.querySelectorAll(".card-body--more").forEach((btnMore, index) => {
   btnMore.addEventListener("click", () => {
-    viewsMore[index].classList.toggle("show");
+    document.querySelectorAll(".card-body--list.view-more")[index].classList.toggle("show");
     btnMore.classList.toggle("show");
   });
 });
+
+// document.querySelector('.modal-login').addEventListener("")
 // scroll header
 // document.addEventListener("scroll", () => {
 //   if (window.scrollY > 400) {

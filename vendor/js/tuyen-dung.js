@@ -62,3 +62,11 @@ $(document).ready(function() {
   const initialActiveTab = $('.card-body.active');
   resetLoadMore('#' + initialActiveTab.attr('id'));
 });
+document.querySelectorAll('.filter-title').forEach(element => {
+    element.addEventListener("click",function() {   
+        element.classList.toggle('active')
+        const parent = element.parentElement;
+        const child = parent.querySelector('.filter-list');
+        child.classList.toggle('active')
+    })
+});

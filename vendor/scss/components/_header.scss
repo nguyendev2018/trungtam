@@ -92,6 +92,10 @@
         display: flex;
         gap: 15px;
     }
+    &-modal {
+        color: white;
+        cursor: pointer;
+    }
     &-search{
         .container {
             max-width: 1200px;
@@ -114,9 +118,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 16px;
         }
-        &__item {
-            
-        }
+
         .job-market {
             font-size: 16px;
 

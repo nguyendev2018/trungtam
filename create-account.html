@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo Tài Khoản</title>
+    <link rel="icon" type="image/x-icon" href="vendor/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.ckeditor.com/ckeditor5/43.3.0/ckeditor5.css"
+  />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="vendor/style/slick.css" />
+    <link rel="stylesheet" href="vendor/style/search.css" />
+    <link rel="stylesheet" href="vendor/style/main.css" />
+    <link rel="stylesheet" href="vendor/js/main.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css">
+
+  <body>
+    <a href="#" class="scroll-up">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+    <div class="header">
+      <div class="header-top">
+        <div class="header-container">
+          <div class="header-left header-spacing">
+            <a class="header-left__link" href="tel:(0274) 3.899.019">
+              <i class="bi bi-telephone"></i>
+              <span>(0274) 3.899.019</span>
+            </a>
+            <a class="header-left__link" href="mailto:cantho@vietnamhr.vn">
+              <i class="bi bi-envelope-at"></i>
+              <span>phonggtvlbd@gmail.com</span>
+            </a>
+          </div>
+          <div class="header-right">
+            <div class="header-right__auth header-spacing">
+              <a href="#dangnhap">
+                <i class="bi bi-box-arrow-in-right"></i>
+                <span>Đăng nhập</span>
+              </a>
+              <a href="#dangky">
+                <i class="bi bi-person"></i>
+                <span>Đăng ký</span>
+              </a>
+            </div>
+            <div class="header-right__flag header-spacing">
+              <div class="flag-lag">
+                <img src="vendor/images/flag-vietnam.png" alt="Tiếng Việt" />
+              </div>
+              <div class="flag-lag">
+                <img src="vendor/images/flag-english.png" alt="Tiếng Anh" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom container">
+        <a href="index.html" class="header-logo">
+          <img
+            src="vendor/images/Logo.png"
+            alt="Trung Tâm Dịch Vụ Việc Làm Bình Dương"
+            title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
+          />
+        </a>
+        <div class="navbar">
+          <div class="navbar-toggle">
+            <div class="navbar-bars"></div>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-header">
+              <a href="#">
+                <img
+                  src="vendor/images/Logo.png"
+                  title="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
+                  alt="TRUNG TÂM DỊCH VỤ VIỆC LÀM BÌNH DƯƠNG"
+                />
+              </a>
+            </div>
+            <a class="navbar-item" href="/Home">
+              <img
+                src="vendor/images/header-bottom/icon-home.png"
+                class="navbar-icon"
+                alt="Trang Chủ"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Trang Chủ
+            </a>
+            <a class="navbar-item" href="/Ung-Vien" id="CanMenu">
+              <img
+                src="vendor/images/header-bottom/icon-vieclam.png"
+                class="navbar-icon"
+                alt="Người Tìm Việc"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Người Tìm Việc
+            </a>
+            <a class="navbar-item" href="/Gioi-Thieu">
+              <img
+                src="vendor/images/header-bottom/icon-timviec.png"
+                class="navbar-icon"
+                alt="Giới Thiệu"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Giới Thiệu
+            </a>
+            <a class="navbar-item" href="/Tuyen-Dung" id="JobMenu">
+              <img
+                src="vendor/images/header-bottom/icon-job.png"
+                class="navbar-icon"
+                alt="Tuyển Dụng"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Tuyển Dụng
+            </a>
+            <a
+              class="navbar-item"
+              title="Sàn online là tính năng mới để kết nối NLD và DN. Bạn sẻ được chat trực tiếp với ứng viên hoặc doanh nghiệp"
+            >
+              <img
+                src="vendor/images/header-bottom/icon-sanonline.jpg"
+                class="navbar-icon"
+                alt="Sàn Oline"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Sàn Online
+            </a>
+            <a class="navbar-item" href="/Van-Ban">
+              <img
+                src="vendor/images/header-bottom/icon-book.png"
+                class="navbar-icon"
+                alt="Văn Bản"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Văn Bản
+            </a>
+            <a class="navbar-item" href="/News/NewsByCategory/3330">
+              <img
+                src="vendor/images/header-bottom/icon-hanhchinh.png"
+                class="navbar-icon"
+                alt="TT Hành Chính"
+              />
+              <i class="bi bi-chevron-right"></i>
+              TT Hành Chính
+            </a>
+            <a class="navbar-item" href="/Tin-Tuc" id="NewsMenu">
+              <img
+                src="vendor/images/header-bottom/icon-news.png"
+                alt="Tin Tức"
+                class="navbar-icon"
+              />
+              <i class="bi bi-chevron-right"></i>
+              Tin Tức
+            </a>
+            <a
+              class="navbar-item navbar-item--sign"
+              href="/Tin-Tuc"
+              id="NewsMenu"
+            >
+              <i class="bi bi-chevron-right"></i>
+              Đăng nhập
+            </a>
+            <a
+              class="navbar-item navbar-item--sign"
+              href="/Tin-Tuc"
+              id="NewsMenu"
+            >
+              <i class="bi bi-chevron-right"></i>
+              Đăng ký
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-search">
+        <div class="header-search__top">
+          <div class="container">
+            <div class="header-search__list">
+              <div class="header-search__item">
+                <h1 class="header-title">VIỆC LÀM BÌNH DƯƠNG</h1>
+                <h2 class="header-subTitle">
+                  <i>Sàn Giao Dịch Việc Làm Tại Bình Dương</i>
+                </h2>
+              </div>
+              <div class="header-search__item">
+                <div class="job-market">
+                  <div class="job-market__top">
+                    <div class="job-market__title">
+                      <img
+                        src="vendor/images/search.svg"
+                        alt="search"
+                        class="job-market__icon"
+                      />
+                      Thị trường việc làm hôm nay :
+                    </div>
+                    <div class="job-market__date">23/07/2024</div>
+                  </div>
+                  <div class="job-market__bottom">
+                    <h3 class="job-market__item">
+                      <span class="job-market__title">
+                        Việc làm đang tuyển :
+                      </span>
+                      <a href="/viec-lam-moi-nhat" class="job-market__value">
+                        1.432
+                      </a>
+                    </h3>
+                    <div class="job-market__divider"></div>
+                    <h3 class="job-market__item">
+                      <span class="job-market__title">
+                        Việc làm hôm nay :
+                      </span>
+                      <a
+                        href="/viec-lam-can-tho-moi-nhat"
+                        class="job-market__value"
+                      >
+                        26
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-form">
+          <div class="search-bar">
+            <form name="frmSearch" id="frmSearch" >
+              <div class="container">
+                <div class="search-inner">
+                  <div class="search-inner__list">
+                      <div class="search-inner__search search-inner__item  search-group_float">
+                        <div class="search-inner__searchCol">
+                          <div
+                          class="form-group search-group_float__item noidung"
+                        >
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Tiêu đề công việc, vị trí..."
+                            value=""
+                            id="searchStr"
+                          />
+                        </div>
+                        </div>
+                        <div class="search-inner__searchCol">
+                          <div
+                          class="form-group  search-group_float__item search-group_float__select nganhnghe"
+                        >
+                          <select
+                            class="form-control select2 vieclam-select2"
+                            multiple=""
+                            data-wrapper=""
+                            name="searchNN"
+                            id="searchNN"
+                            data-placeholder="Lọc theo ngành nghề"
+                            size="1"
+                          >
+                            <option class="option-items " value="-1">
+                              Ngành nghề
+                            </option>
+                          
+                            <option class="option-items " value="24">
+                              Bảo vệ
+                            </option>
+                            <option class="option-items " value="10">
+                              Hóa học
+                            </option>
+                            <option class="option-items " value="38">
+                              Bất động sản
+                            </option>
+                            <option class="option-items " value="56">
+                              Làm đẹp
+                            </option>
+                            <option class="option-items " value="24">
+                                Bảo vệ
+                              </option>
+                              <option class="option-items " value="10">
+                                Hóa học
+                              </option>
+                              <option class="option-items " value="38">
+                                Bất động sản
+                              </option>
+                              <option class="option-items " value="56">
+                                Làm đẹp
+                              </option>
+                          </select>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="search-inner__filter search-inner__item filter">
+                          <div class="search-inner__filterCol">
+                            <div
+                            class="form-group search-group_float__item diadiem"
+                          >
+                            <select
+                              class="form-control vieclam-select2 select2"
+                              name=""
+                              multiple=""
+                              data-wrapper=""
+                              id="searchDD"
+                              data-placeholder="Lọc theo địa điểm"
+                              size="1"
+                            >
+                              <option class="option-items " value="-1">
+                                Địa điểm - Tất cả
+                              </option>
+                              <option class="option-items " value="1">
+                                Cần Thơ
+                              </option>
+                              <option class="option-items " value="2">
+                                Vĩnh Long
+                              </option>
+                              <option class="option-items " value="8">
+                                Hậu Giang
+                              </option>
+                              <option class="option-items " value="71">
+                                Khác
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="search-inner__filterCol">
+                          <button type="submit" class="form-control btn-find btn-primary hidden-sm">
+                            Tìm kiếm
+                          </button>
+                        </div>
+                      </div>
+                      <div class="search-inner__item btn-filterSearch ">
+                        <div class="form-control btn-find btn-filter" id="btn-filter">
+                          <i class="bi bi-funnel"></i> Lọc nâng cao
+                        </div>              
+                        <div class="form-control btn-find">
+                          <i class="bi bi-search"></i> Tìm kiếm
+                        </div>            
+                      </div>
+                  </div>
+                  <div class="collapse-filter" id="collapse-btn">
+                    <div class="search-collapse">
+                      <div class="collapse-list">
+                          <div class="search-group">
+                            <div
+                              class="form-group search-group_float__item salary"
+                            >
+                              <select
+                                class="form-control vieclam-select2 select2"
+                                name="salary"
+                                multiple=""
+                                data-wrapper=""
+                                id="searchSalary"
+                                data-placeholder="Lọc theo mức lương"
+                              >
+                                <option value="1">Thỏa thuận</option>
+                                <option value="2">Dưới 3 triệu</option>
+                                <option value="3">3 - 5 triệu</option>
+                                <option value="4">5 - 7 triệu</option>
+                                <option value="5">7 - 10 triệu</option>
+                                <option value="6">10 - 12 triệu</option>
+                                <option value="7">12 - 15 triệu</option>
+                                <option value="8">15 - 20 triệu</option>
+                                <option value="9">20 - 25 triệu</option>
+                                <option value="10">25 - 30 triệu</option>
+                                <option value="11">Trên 30 triệu</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="search-group">
+                            <div
+                              class="form-group search-group_float__item  ranks"
+                            >
+                              <select
+                                class="form-control vieclam-select2 select2"
+                                name="ranks"
+                                multiple=""
+                                data-wrapper=""
+                                id="searchRank"
+                                data-placeholder="Lọc theo cấp bậc"
+                                size="1"
+                              >
+                                <option value="1">Sinh viên</option>
+                                <option value="2">Nhân viên</option>
+                                <option value="3">Trưởng nhóm</option>
+                                <option value="4">Quản lý</option>
+                                <option value="5">Điều hành cấp cao</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="search-group">
+                            <div
+                              class="form-group search-group_float__item  type"
+                            >
+                              <select
+                                class="form-control vieclam-select2 select2"
+                                name="type"
+                                multiple=""
+                                data-wrapper=""
+                                id="searchType"
+                                data-placeholder="Lọc theo loại hình công việc"
+                                size="1"
+                              >
+                                <option value="1">Toàn thời gian</option>
+                                <option value="2">Bán thời gian</option>
+                                <option value="3">Thực tập</option>
+                                <option value="5">Remote - Làm việc từ xa</option>
+                                <option value="4">Khác</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="search-group">
+                            <div
+                              class="form-group search-group_float__item experience"
+                            >
+                              <select
+                                class="form-control vieclam-select2 select2"
+                                name="experience"
+                                multiple=""
+                                data-wrapper=""
+                                id="searchKinhNghiem"
+                                data-placeholder="Lọc theo kinh nghiệm"
+                                size="1"
+                              >
+                                <option value="1">Không yêu cầu</option>
+                                <option value="8">Dưới 1 năm</option>
+                                <option value="2">1 năm</option>
+                                <option value="3">2 năm</option>
+                                <option value="4">3 năm</option>
+                                <option value="5">4 năm</option>
+                                <option value="6">5 năm</option>
+                                <option value="7">Trên 5 năm</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay-black"></div>
+    <div class="container">
+      <h2>Thông Tin Người Đăng Ký</h2>
+      <div class="form-register create-account">
+        <form action="">
+        
+          <div class="block-item">
+            <div class="group-two">
+              <div class="form-group">
+                <label for="name">Họ tên <span>*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Mời bạn nhập họ và tên"
+                  
+                />
+              </div>
+              <div class="form-group">
+                <label for="cmnd">Số CMND <span>*</span></label>
+                <input
+                  type="number"
+                  id="cmnd"
+                  class="form-control"
+                  placeholder="Mời bạn nhập chứng minh nhân dân"
+                  
+                />
+              </div>
+            </div>
+            <div class="group-two">
+              <div class="form-group">
+                <label for="birthday">Ngày sinh <span>*</span></label>
+                <input
+                  type="text"
+                  id="datepicker"
+                  class="form-control"
+                  placeholder="Mời bạn nhập ngày sinh"
+                />
+              </div>
+              <div class="form-group">
+                <label for="sex">Giới tính <span>*</span></label>
+                <div style="display: flex; gap: 30px;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Nam
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Nữ
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="group-two">
+              <div class="form-group">
+                <label for="name">Dân Tộc <span>*</span></label>
+                <select name="" id="nation" class="form-control">
+                  <option value="1">Kinh</option>
+                  <option value="2">Khơme</option>
+                  <option value="2">Chăm</option>
+                  <option value="2">Không xác định</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cmnd">Tôn Giáo<span>*</span></label>
+                <select name="" id="religion" class="form-control">
+                  <option value="1">Phật Giáo</option>
+                  <option value="2">Thiên Chúa</option>
+                  <option value="2">Hồi Giáo</option>
+                  <option value="2">Không</option>
+                </select>
+              </div>
+            </div>
+            <div class="group-third">
+              <h4>Địa chỉ thường trú <span>*</span></h4>
+              <div style="border: 1px solid darkgray; padding:0px 20px 20px;margin-top:15px;">
+                 
+                 <div class="group-two">
+                  <div class="form-group">
+                    <label for="conscious">Tỉnh <span>*</span></label>
+                    <select class="form-select form-control  " id="provinceTT" aria-label=".form-select-sm">
+                        <option value="" selected>Chọn tỉnh thành</option>           
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="conscious">Huyện <span>*</span></label>
+                    <select class="form-select form-control " id="districtTT" aria-label=".form-select-sm">
+                        <option value="" selected>Chọn quận huyện</option>
+                        </select>
+                  </div>
+                
+                </div>   <div class="form-group">
+                    <label for="conscious">Xã <span>*</span></label>
+                    <select class="form-select form-control" id="wardTT" aria-label=".form-select-sm">
+                        <option value="" selected>Chọn phường xã</option>
+                        </select>
+                  </div>
+                <div class="form-group">
+                  <label for="address">Địa chỉ cụ thể <span>*</span></label>
+                  <input
+                    type="text"
+                    id="address"
+                    class="form-control"
+                    placeholder="Mời bạn nhập địa chỉ cụ thể"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="group-third">
+                <h4>Địa chỉ hiện nay <span>*</span></h4>
+                <div style="border: 1px solid darkgray; padding:0px 20px 20px;margin-top:15px;">
+                   
+                   <div class="group-two">
+                    <div class="form-group">
+                      <label for="conscious">Tỉnh <span>*</span></label>
+                      <select class="form-select form-control  " id="city" aria-label=".form-select-sm">
+                          <option value="" selected>Chọn tỉnh thành</option>           
+                          </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="conscious">Huyện <span>*</span></label>
+                      <select class="form-select form-control " id="district" aria-label=".form-select-sm">
+                          <option value="" selected>Chọn quận huyện</option>
+                          </select>
+                    </div>
+                  
+                  </div>   <div class="form-group">
+                      <label for="conscious">Xã <span>*</span></label>
+                      <select class="form-select form-control" id="ward" aria-label=".form-select-sm">
+                          <option value="" selected>Chọn phường xã</option>
+                          </select>
+                    </div>
+                  <div class="form-group">
+                    <label for="address">Địa chỉ cụ thể <span>*</span></label>
+                    <input
+                      type="text"
+                      id="address"
+                      class="form-control"
+                      placeholder="Mời bạn nhập địa chỉ cụ thể"
+                    />
+                  </div>
+                </div>
+              </div>
+            <div class="group-two">
+              <div class="form-group">
+                <label for="name">Số điện thoại <span>*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Mời bạn nhập số điện thoại"
+                  
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span>*</span></label>
+                <input
+                  type="email"
+                  id="cmnd"
+                  class="form-control"
+                  placeholder="Mời bạn nhập email"
+                  
+                />
+              </div>
+            </div>
+          </div>
+          <div class="block-item">
+            <div class="form-group">
+              <label for="name">Trình độ văn hóa <span>*</span></label>
+              <select name="" id="educationSelect" class="form-control">
+                <option value="1">Tốt nghiệp trung học phổ thông</option>
+                <option value="2">Tốt nghiệp trung học cơ sở</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Hình ảnh đại diện </label>
+            <div class="file-upload">
+              <div class="image-upload-wrap">
+                <input
+                  class="file-upload-input"
+                  type="file"
+                  onchange="readURL(this);"
+                  accept="image/*"
+                />
+                <div class="drag-text">
+                  <h3>Kéo và thả file hình ảnh hoặc chọn thêm hình</h3>
+                </div>
+              </div>
+              <button
+                class="file-upload-btn"
+                type="button"
+                onclick="$('.file-upload-input').trigger( 'click' )"
+              >
+                Thêm hình ảnh
+              </button>
+        
+              <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                  <button type="button" onclick="removeUpload()" class="remove-image">
+                    Remove <span class="image-t itle">Uploaded Image</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="form-add">
+              <h5>"Để thêm mới bấm vào nút <span class="circle">+</span>  bên dưới"
+              </h5>
+              <div class="block-add">
+                <div class="sub-title">
+                  <button class="btn circle control-addLevel">
+                    +
+                  </button>
+                  <h6>Trình độ chuyên môn <span>(*)</span></h6>
+                </div>
+                <p>(Mặc định : Chưa qua đào tạo)</p>
+                <div class="block-content block-level">
+                  <div class="popup-delete">
+                    <div class="popup-title">
+                      <i class="bi bi-x-lg  icon-remove handle-back"></i>
+                      <div class="bg-trash">
+                        <i class="bi bi-trash3"></i>
+                      </div>
+                      <span>Xóa trình độ</span>
+                   
+                    </div>
+                    <div class="popup-main">
+                      <span>Bạn có chắc sẽ xóa trình độ chuyên môn này chứ ?</span>
+                    </div>
+                    <div class="popup-foot">
+                      <button class="btn btn-primary handle-back">Quay về</button>
+                      <button class="btn btn-danger handle-remove">Xóa</button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="block-add">
+                <div class="sub-title">
+                  <button class="btn circle control-addLang">
+                    +
+                  </button>
+                  <h6>Trình độ ngoại ngữ </h6>
+                </div>
+                <div class="block-content block-lang">
+                  <div class="popup-delete">
+                    <div class="popup-title">
+                      <i class="bi bi-x-lg  icon-remove handle-back"></i>
+                      <div class="bg-trash">
+                        <i class="bi bi-trash3"></i>
+                      </div>
+                      <span>Xóa trình độ</span>
+                    </div>
+                    <div class="popup-main">
+                      <span>Bạn có chắc sẽ xóa trình độ chuyên môn này chứ ?</span>
+                    </div>
+                    <div class="popup-foot">
+                      <button class="btn btn-primary handle-back">Quay về</button>
+                      <button class="btn btn-danger handle-remove">Xóa</button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="block-add">
+                <div class="sub-title">
+                  <button class="btn circle control-addIT">
+                    +
+                  </button>
+                  <h6>Trình độ tin học </h6>
+                </div>
+                <div class="block-content blockIT">
+                  <div class="popup-delete">
+                    <div class="popup-title">
+                      <i class="bi bi-x-lg  icon-remove handle-back"></i>
+                      <div class="bg-trash">
+                        <i class="bi bi-trash3"></i>
+                      </div>
+                      <span>Xóa trình độ</span>
+                    </div>
+                    <div class="popup-main">
+                      <span>Bạn có chắc sẽ xóa trình độ chuyên môn này chứ ?</span>
+                    </div>
+                    <div class="popup-foot">
+                      <button class="btn btn-primary handle-back">Quay về</button>
+                      <button class="btn btn-danger handle-remove">Xóa</button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="block-add">
+                <div class="sub-title">
+                  <button class="btn circle control-addEXP">
+                    +
+                  </button>
+                  <h6>Kinh nghiệm làm việc </h6>
+                </div>
+                <div class="block-content blockEXP">
+                  <div class="popup-delete">
+                    <div class="popup-title">
+                      <i class="bi bi-x-lg  icon-remove handle-back"></i>
+                      <div class="bg-trash">
+                        <i class="bi bi-trash3"></i>
+                      </div>
+                      <span>Xóa trình độ</span>
+                    </div>
+                    <div class="popup-main">
+                      <span>Bạn có chắc sẽ xóa trình độ chuyên môn này chứ ?</span>
+                    </div>
+                    <div class="popup-foot">
+                      <button class="btn btn-primary handle-back">Quay về</button>
+                      <button class="btn btn-danger handle-remove">Xóa</button>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="block-add">
+                <div class="sub-title">
+                  <i class="bi bi-windows icon-title"></i>
+                  <h6>Kỹ Năng Mềm </h6>
+                </div>
+                <div class="block-content block-soft">
+                  <div class="block-group block-option">
+                    <div class="item">
+                      <span>Giao tiếp</span>
+                    </div>
+                    <div class="item">
+                      <span>Thuyết Trình</span>
+                    </div>
+                    <div class="item">
+                      <span>Quản lý thời gian</span>
+                    </div>
+                    <div class="item">
+                      <span>Thích ứng</span>
+                    </div>
+                    <div class="item">
+                      <span>Làm việc nhóm</span>
+                    </div>
+                    <div class="item">
+                      <span>Làm việc độc lập</span>
+                    </div>
+                    <div class="item">
+                      <span>Chịu được áp lực công việc</span>
+                    </div>
+                    <div class="item">
+                      <span>Theo dõi giám sát</span>
+                    </div>
+                    <div class="item">
+                      <span>Quản lý nhân sự</span>
+                    </div>
+                    <div class="item">
+                      <span>Tổng hợp, báo cáo</span>
+                    </div>
+                    <div class="item">
+                      <span>Tư duy phản biện</span>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="block-add">
+                <div class="sub-title">
+                  <i class="bi bi-person-fill-add icon-title"></i>
+                  <h6>Đăng Ký Dịch Vụ </h6>
+                </div>
+                <div class="block-content block-service">
+                  <div class="block-group block-option">
+                    <div class="item">
+                      <span>Đăng ký tìm việc</span>
+                    </div>
+                    <div class="item">
+                      <span>Tư vấn chính sách</span>
+                    </div>
+                    <div class="item">
+                      <span>Tư vấn việc làm </span>
+                    </div>
+                    <div class="item">
+                      <span>Tư vấn về đào tạo, kỹ năng nghề</span>
+                    </div>
+                    <div class="item">
+                      <span>Khác</span>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+        </div>
+            </form>
+
+    </div>
+    </div>
+</body>
+
+<script src="vendor/js/library/jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+<script src="vendor/js/library/lib-slick.js"></script>
+<script src="vendor/js/slick.js"></script>
+<script src="vendor/js/library/select2.js"></script>
+
+<script src="vendor/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/43.3.0/ckeditor5.umd.js"></script>
+
+<script src="vendor/js/library/bootstrap-datepicker.min.js"></script>
+<script src="vendor/js/create-account--new.js"></script>
+
+<script type="module" src="vendor/js/form-CRUD/form-lang/formLang.js"></script>
+<script type="module" src="vendor/js/form-CRUD/form-level/formLevel.js"></script>
+<script type="module" src="vendor/js/form-CRUD/form-IT/formIT.js"></script>
+<script type="module" src="vendor/js/form-CRUD/form-experience/formEXP.js"></script>
+</html>

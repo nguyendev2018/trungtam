@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="vendor/js/main.js" />  
   </head>
   <body>
+    
     <!-- <div id="preloader-active">
       <div class="preloader">
       <div class="preloader-inner">
@@ -32,6 +33,61 @@
     <a href="#" class="scroll-up">
       <i class="bi bi-chevron-up"></i>
     </a>
+    <div class="modal-user modal-login">
+      <div class="block-intro">
+        <h2>Đăng Nhập hệ thống </h2>
+        <div class="block-close"><i class="bi bi-x-lg"></i></div>
+      </div>
+      <div class="block-form">
+        <div class="form-group">
+          <label for="username">Tài khoản</label>
+          <input type="text" id="username" class="form-control" placeholder="Mời bạn nhập tài khoản" required="">  
+        </div>
+        <div class="form-group">
+          <div class="block-labelPass">
+            <label for="password">Mật khẩu</label>
+            <span id="forgot-password">Quên mật khẩu ?</span>
+          </div>
+          
+          <div class="block-password">
+            <div id="toggle-password">
+              <i class="bi bi-eye" title="Ẩn mật khẩu"></i>
+              <i class="bi bi-eye-slash" title="Hiện mật khẩu"></i>
+            </div>
+            <input type="password" id="password" class="form-control" placeholder="Mời bạn nhập mật khẩu" required="">  
+          </div>
+      </div>
+      <button class="btn-login">Đăng nhập</button>
+      <div style="display: flex; justify-content: space-between;align-items: center; margin-top: 30px;">
+        <div class="block-remember">
+          <input type="checkbox" id="remember">
+          <label for="remember">Nhớ tài khoản đăng nhập</label>
+          
+        </div>
+        <div class="block-register">
+          <i class="bi bi-chevron-double-right"></i>
+          <a href="create-account.html">Tạo tài khoản</a>  
+       
+        </div>
+        
+      </div>
+     
+      </div>
+      </div>
+    <div class="modal-user modal-forgot">
+      <div  class="block-intro">
+        <h2>Quên mật khẩu </h2>
+        <div class="block-close"><i class="bi bi-x-lg"></i></div>
+      </div>
+      <div class="block-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" class="form-control" placeholder="Mời bạn nhập email" required="">  
+          <button class="btn-login">Kích hoạt lại Email</button>
+        </div>
+    </div>
+  
+  </div>
     <div class="header">
       <div class="header-top">
         <div class="header-container">
@@ -47,13 +103,13 @@
           </div>
           <div class="header-right">
             <div class="header-right__auth header-spacing">
-              <a href="#dangnhap">
+              <div class="header-modal login" >
                 <i class="bi bi-box-arrow-in-right"></i>
                 <span>Đăng nhập</span>
-              </a>
-              <a href="#dangky">
+              </div>
+              <a href="register.html" class="header-login register">
                 <i class="bi bi-person"></i>
-                <span>Đăng ký</span>
+                <span>Đăng Ký</span>
               </a>
             </div>
             <div class="header-right__flag header-spacing">
@@ -152,7 +208,7 @@
               <i class="bi bi-chevron-right"></i>
               TT Hành Chính
             </a>
-            <a class="navbar-item" href="/Tin-Tuc" id="NewsMenu">
+            <a class="navbar-item" href="/news.html" id="NewsMenu">
               <img
                 src="vendor/images/header-bottom/icon-news.png"
                 alt="Tin Tức"
@@ -279,6 +335,19 @@
                             <option class="option-items " value="56">
                               Làm đẹp
                             </option>
+                            <option class="option-items " value="24">
+                              Bảo vệ
+                            </option>
+                            <option class="option-items " value="10">
+                              Hóa học
+                            </option>
+                            <option class="option-items " value="38">
+                              Bất động sản
+                            </option>
+                            <option class="option-items " value="56">
+                              Làm đẹp
+                            </option>
+                            
                           </select>
                         </div>
                         </div>
@@ -573,6 +642,16 @@
                 </div>
                 <div class="news-item__content">
                   <span class="entry-title">Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</span>
+                  <div class="advise-block">
+                    <div class="">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
                 </div>
               </a>
               <a href="#" class="hot-news--item">
@@ -581,6 +660,16 @@
                 </div>
                 <div class="news-item__content">
                   <span class="entry-title">Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</span>
+                  <div class="advise-block">
+                    <div class="">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
                 </div>
               </a>
 
@@ -590,6 +679,16 @@
                 </div>
                 <div class="news-item__content">
                   <span class="entry-title">Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</span>
+                  <div class="advise-block">
+                    <div class="">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
                 </div>
               </a>
               <a href="#" class="hot-news--item">
@@ -598,6 +697,16 @@
                 </div>
                 <div class="news-item__content">
                   <span class="entry-title">Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</span>
+                  <div class="advise-block">
+                    <div class="">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
                 </div>
               </a>
               <a href="#" class="hot-news--item">
@@ -606,6 +715,16 @@
                 </div>
                 <div class="news-item__content">
                   <span class="entry-title">Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</span>
+                  <div class="advise-block">
+                    <div class="">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>
                 </div>
               </a>
               <a href="#" class="hot-news--item">
@@ -614,6 +733,16 @@
                 </div>
                 <div class="news-item__content">
                   <span class="entry-title">Thông báo lịch thi vòng 2 - Kiểm tra tay nghề cho lao động xuất khẩu lao động  hàn quốc</span>
+                  <div class="advise-block">
+                    <div class="">
+                      <i class="bi bi-calendar-minus"></i>
+                      <span>10/7/2024</span>
+                    </div>
+                    <div class="">
+                      <i class="bi bi-eye"></i>
+                      <span>113</span>
+                    </div>
+                  </div>  
                 </div>
               </a>
             </div>
@@ -937,9 +1066,14 @@
     </section>
     <section class="business content-padding">
       <div class="container-small">
-        <div class="block-title">
+        <div class="block-title view-more">
           <h3 class="title">Doanh Nghiệp Tiêu Biểu</h3>
+          <a href="job-seeker.html" target="_blank" class="right link">
+            <i class="bi bi-chevron-right"></i>
+            <span>Xem thêm</span>  
+          </a>
         </div>
+        
         <div class="business-list">
           <a href="#" class="business-item"> 
             <div class="business-img">
@@ -1363,53 +1497,67 @@
           </div>
         </div>
         <div class="video-main">
-          <div class="video-small show" >
-            <div class="video-img">
-              <i class="bi bi-play-circle"></i>
+          <div class="video-small video-carousel__item" >
+            <div class="video-img bg-playVideo">
+              <div class="video-play-button" href="#">
+                <i class="bi bi-play-fill"></i>
+              </div>
               <img src="vendor/images/video/1.png" alt="" data-item="ZcGy_RTfmT4">
             </div>
             <p>Thông tin thị trường lao động tỉnh Bình Dương Quý II năm 2024</p>
           </div>
-          <div class="video-small" >
-            <div class="video-img">
-              <i class="bi bi-play-circle"></i>
+          <div class="video-small video-carousel__item" >
+            <div class="video-img bg-playVideo">
+              <div class="video-play-button">
+                <i class="bi bi-play-fill"></i>
+              </div>
               <img  src="vendor/images/video/2.png" alt="" data-item="dbhbLz2y4d4">
             </div>
             <p>Hàng Ngàn việc làm tại hội làm việc 2024 - Hành trình mới tương lai mới</p>
           </div>
-          <div class="video-small"  >
-            <div class="video-img">
-              <i class="bi bi-play-circle"></i>
+          <div class="video-small video-carousel__item"  >
+            <div class="video-img bg-playVideo">
+              <div class="video-play-button">
+                <i class="bi bi-play-fill"></i>
+              </div>
               <img  src="vendor/images/video/3.png" alt="" data-item="c7aV9uM-5c0" >
             </div>
             <p>Cơ hội nào cho người lao động thất nghiệp tiếp cận thị trường lao động</p>
           </div>
-          <div class="video-small">
-            <div class="video-img">
-              <i class="bi bi-play-circle"></i>
+          <div class="video-small video-carousel__item">
+            <div class="video-img bg-playVideo">
+              <div class="video-play-button">
+                <i class="bi bi-play-fill"></i>
+              </div>
               <img  src="vendor/images/video/4.png" alt=""  data-item="TwMw5JhE7Tc">
             </div>
             <p>Chi đoàn trung tâm DVVL Bình Dương gói quà chuẩn bị ngày hội thiếu nhi 1/6 lần thứ VIII năm 2024</p>
           </div>
-          <div class="video-small">
-            <div class="video-img">
-              <i class="bi bi-play-circle"></i>
+          <div class="video-small video-carousel__item">
+            <div class="video-img bg-playVideo">
+              <div class="video-play-button">
+                <i class="bi bi-play-fill"></i>
+              </div>
             <img src="vendor/images/video/5.png" alt=""  data-item="Q-y0JmvW4Lc">
           </div>
           <p>Trung tâm dịch vụ việc làm Bình Dương tham dự ngày hội việc làm thị xã bến cát năm 2024</p>
 
           </div>
-          <div class="video-small" >
-            <div class="video-img">
-              <i class="bi bi-play-circle"></i>
+          <div class="video-small video-carousel__item" >
+            <div class="video-img bg-playVideo">
+              <div class="video-play-button">
+                <i class="bi bi-play-fill"></i>
+              </div>
             <img  src="vendor/images/video/2.png" alt="" data-item="dbhbLz2y4d4">
           </div>
           <p>Hàng Ngàn việc làm tại hội làm việc 2024 - Hành trình mới tương lai mới</p>
 
           </div>
-          <div class="video-small"  >
-            <div class="video-img">
-              <i class="bi bi-play-circle"></i>
+          <div class="video-small video-carousel__item"  >
+            <div class="video-img bg-playVideo">
+              <div class="video-play-button">
+                <i class="bi bi-play-fill"></i>
+              </div>
             <img  src="vendor/images/video/3.png" alt="" data-item="c7aV9uM-5c0" >
           </div>
           <p>Cơ hội nào cho người lao động thất nghiệp tiếp cận thị trường lao động</p>
@@ -1428,7 +1576,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.017988141494!2d106.6926263745195!3d10.962013555744184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1179d28bc51%3A0xb8eca68c37395554!2sEmployment%20Service%20Center%20Binh%20Duong!5e0!3m2!1sen!2s!4v1722938756362!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="contact-item contact-form">
-            <form action="">
+            <form action="" method="post">
               <div class="form-group">
                 <label for="firstName">Họ và tên</label>
                 <input type="text" id="firstName" class="form-control" placeholder="Mời bạn nhập vào họ và tên" required>  
@@ -1439,7 +1587,7 @@
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input id="email" type="email" class="form-control" placeholder="Mời bạn nhập vào số điện thoại" required>   
+                <input id="email" type="email" class="form-control" placeholder="Mời bạn nhập email" required>   
               </div>
               <div class="form-group">
                 <label for="content">Nội dung</label>
@@ -1556,5 +1704,6 @@
     <script src="vendor/js/slick.js"></script> 
     <script src="vendor/js/library/select2.js"></script>
     <script src="vendor/js/main.js"></script>
-    
+    <script src="vendor/js/login-register.js"></script>
+    <script src="vendor/js/header.js"></script>
   </html>

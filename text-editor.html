@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CKEditor 5 - Quick start CDN</title>
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.3.0/classic/theme/classic.css" />
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.3.0/ckeditor5.css" />
+
+  </head>
+<body>
+    <div id="editor">
+        <p>Hello from CKEditor 5!</p>
+    </div>
+
+    <!-- Load CKEditor 5 from the CDN -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const { ClassicEditor, Essentials, Bold, Italic, Font, Paragraph } = window.CKEDITOR;
+
+            ClassicEditor
+                .create(document.querySelector('#editor'), {
+                    plugins: [Essentials, Bold, Italic, Font, Paragraph],
+                    toolbar: [
+                        'undo', 'redo', '|', 'bold', 'italic', '|',
+                        'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+                    ]
+                })
+             
+        });
+    </script>
+</body>
+</html>

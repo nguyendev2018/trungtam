@@ -13,6 +13,9 @@
 .hidden-tablet {
     display: none !important;
 }
+.d-none {
+    display: none;
+}
 @media screen and (max-width : 767px) {
     .show-tablet {
         display: none !important;
