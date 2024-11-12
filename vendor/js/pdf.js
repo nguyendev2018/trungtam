@@ -1,4 +1,3 @@
-
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 const url =
   proxyUrl +
@@ -83,9 +82,7 @@ const zoomOut = () => {
 };
 
 const goToPage = () => {
-  const pageNumInput = parseInt(
-    document.getElementById("page-input").value
-  );
+  const pageNumInput = parseInt(document.getElementById("page-input").value);
   if (pageNumInput >= 1 && pageNumInput <= pdfDoc.numPages) {
     pageNum = pageNumInput;
     queueRenderPage(pageNum);
@@ -165,15 +162,27 @@ pdfjsLib.getDocument(url).promise.then((pdfDoc_) => {
   renderPage(pageNum);
 });
 
-document
-  .getElementById("prev-page")
-  .addEventListener("click", showPrevPage);
-document
-  .getElementById("next-page")
-  .addEventListener("click", showNextPage);
-document.getElementById("zoom-in").addEventListener("click", zoomIn);
-document.getElementById("zoom-out").addEventListener("click", zoomOut);
-document.getElementById("page-input").addEventListener("change", goToPage);
-document
-  .getElementById("download-pdf")
-  .addEventListener("click", downloadPDF);
+document.getElementById("prev-page").addEventListener("click", (event) => {
+  event.preventDefault();
+  showPrevPage();
+});
+document.getElementById("next-page").addEventListener("click", (event) => {
+  event.preventDefault();
+  showNextPage();
+});
+document.getElementById("zoom-in").addEventListener("click", (event) => {
+  event.preventDefault();
+  zoomIn();
+});
+document.getElementById("zoom-out").addEventListener("click", (event) => {
+  event.preventDefault();
+  zoomOut();
+});
+document.getElementById("page-input").addEventListener("change", (event) => {
+  event.preventDefault();
+  goToPage();
+});
+document.getElementById("download-pdf").addEventListener("click", (event) => {
+  event.preventDefault();
+  downloadPDF();
+});
