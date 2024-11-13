@@ -9,9 +9,11 @@ export function controlAddIT(blockIT, arrayIT, selectedAbility) {
   idIT++;
   displayForm(blockIT, idIT, arrayIT, selectedAbility);
 }
-document
-  .querySelector(".control-addIT")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    controlAddIT(blockIT, arrayIT, selectedAbility);
-  });
+export function initializeFormIT() {
+  document
+    .querySelector(".control-addIT")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      controlAddIT(blockIT, arrayIT, selectedAbility);
+    });
+}

@@ -31,8 +31,10 @@ export function displayContentLevel(
               <p class="job-title">Trình độ : ${item.TrinhDoCMKT_ID}</p>
               ${untrained}
             </div>
-            <i class='bi bi-pencil-square' title="Sửa thông tin"></i>
-            <i class="bi bi-trash3-fill" title="Xóa trình độ chuyên môn"></i>
+            <div class="item-job--icon">
+              <i class='bi bi-pencil-square' title="Sửa thông tin"></i>
+              <i class="bi bi-trash3-fill" title="Xóa trình độ chuyên môn"></i>
+            </div>
           </li>
         </ul>
       `;

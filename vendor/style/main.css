@@ -2722,6 +2722,21 @@ body:has(.form-register) {
   color: #000;
 }
 
+.form-register .form-editor li {
+  list-style: unset;
+}
+
+.form-register .form-objDesc {
+  margin-top: 10px;
+  display: none;
+}
+
+.form-register .form-objDesc.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .form-register #desc-exp {
   margin-top: 20px;
   display: none;
@@ -2761,7 +2776,8 @@ body:has(.form-register) {
   height: 30px;
 }
 
-.form-register .note-editor .note-toolbar > .note-btn-group, .form-register .note-popover .popover-content > .note-btn-group {
+.form-register .note-editor .note-toolbar > .note-btn-group,
+.form-register .note-popover .popover-content > .note-btn-group {
   max-width: 50%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -2774,7 +2790,8 @@ body:has(.form-register) {
   gap: 4px;
 }
 
-.form-register .note-editor .note-toolbar, .form-register .note-popover .popover-content {
+.form-register .note-editor .note-toolbar,
+.form-register .note-popover .popover-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3066,6 +3083,7 @@ body:has(.form-register) {
 
 .form-register .form-add .select2-selection {
   position: relative;
+  padding: 4px;
 }
 
 .form-register .form-add .select2-selection:after {
@@ -3302,11 +3320,17 @@ body:has(.form-register) {
 .form-register .block-content .item-job i.bi {
   font-size: 20px;
   cursor: pointer;
-  margin-left: 20px;
 }
 
 .form-register .block-content .item-job i.bi-card-list {
   color: forestgreen;
+}
+
+.form-register .block-content .item-job--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
 }
 
 .form-register .block-content .item-job--name {
@@ -3424,11 +3448,6 @@ body:has(.form-register) {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
-}
-
-.form-register .block-group .item.active {
-  background: #016FC7;
-  border-color: #016FC7;
 }
 
 .form-register .block-group .item.active span {

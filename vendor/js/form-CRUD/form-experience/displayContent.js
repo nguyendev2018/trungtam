@@ -1,7 +1,5 @@
-import {
-  editEXP
-} from "./editEXP.js";
-// import { deleteIT } from './deleteIT.js';
+import { editEXP } from "./editEXP.js";
+import { deleteEXP } from "./deleteEXP.js";
 
 export function displayContentEXP(
   blockId,
@@ -11,14 +9,14 @@ export function displayContentEXP(
 ) {
   let displayContainer = blockEXP.querySelector(".display-container");
   if (!displayContainer) {
-      displayContainer = document.createElement("div");
-      displayContainer.classList.add("display-container");
-      blockEXP.appendChild(displayContainer);
+    displayContainer = document.createElement("div");
+    displayContainer.classList.add("display-container");
+    blockEXP.appendChild(displayContainer);
   }
   displayContainer.innerHTML = "";
 
   arrayEXP.forEach((item) => {
-      const result = `
+    const result = `
     <ul>
       <li class="item-job" data-id="${item.blockId}">
       <div class="item-content">
@@ -29,8 +27,11 @@ export function displayContentEXP(
           <p class="job-title">${item.TenCongTy}</p>
           <p class="job-title">${item.ChucVu}</p>
           </div>
+          <div class="item-job--icon">
         <i class="bi bi-chevron-down click-moreDesc" data-id="desc-exp" title="Xem thêm"></i>
         <i class='bi bi-pencil-square' title="Sửa thông tin"></i>
+        <i class='bi bi-trash3-fill' title="Xóa thông tin"></i>
+         </div>
         </div>
         </div>
         <div id="desc-exp">
@@ -45,23 +46,23 @@ export function displayContentEXP(
     </ul>
   `;
 
-      displayContainer.insertAdjacentHTML("beforeend", result);
-      const jobElement = document.querySelector(
-          `.blockEXP .item-job[data-id="${item.blockId}"]`
-      );
-      jobElement
-          .querySelector(".click-moreDesc")
-          .addEventListener("click", function(e) {
-              this.classList.toggle("active");
-              const getID = jobElement.querySelector("#desc-exp");
-              if (this.classList.contains("active")) {
-                  getID.classList.add("active");
-              } else {
-                  getID.classList.remove("active");
-              }
-          });
-      // // Gọi hàm edit và delete sau khi đã thêm phần tử mới
-      editEXP(item.blockId, blockEXP, arrayEXP, selectedAbility);
-      // deleteIT(item.blockId, blockIT, arrayIT, selectedAbility);
+    displayContainer.insertAdjacentHTML("beforeend", result);
+    const jobElement = document.querySelector(
+      `.blockEXP .item-job[data-id="${item.blockId}"]`
+    );
+    jobElement
+      .querySelector(".click-moreDesc")
+      .addEventListener("click", function (e) {
+        this.classList.toggle("active");
+        const getID = jobElement.querySelector("#desc-exp");
+        if (this.classList.contains("active")) {
+          getID.classList.add("active");
+        } else {
+          getID.classList.remove("active");
+        }
+      });
+    // // Gọi hàm edit và delete sau khi đã thêm phần tử mới
+    editEXP(item.blockId, blockEXP, arrayEXP, selectedAbility);
+    deleteEXP(item.blockId, blockEXP, arrayEXP, selectedAbility);
   });
 }

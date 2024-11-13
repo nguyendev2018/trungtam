@@ -828,6 +828,20 @@
                   </div>
                 </div> 
               </div>
+              <div class="form-group" style="padding-bottom: 60px;">
+                <label for="name">Đối tượng ưu tiên <span>(nếu có)</span></label>
+                <select name="" id="priority-object"  name="states[]" multiple="multiple" class="form-control" placeholder="Chọn đối tượng ưu tiên">
+                  <option value="Người khuyết tật">Người khuyết tật</option>
+                  <option value="Bộ đội xuất ngũ">Bộ đội xuất ngũ</option>
+                  <option value="Người thuộc hộ nghèo, cận nghèo">Người thuộc hộ nghèo, cận nghèo</option>
+                  <option value="Người dân tộc tiếu số">Người dân tộc tiểu số</option>
+                  <option value="Khác">Khác</option>
+                </select>
+                <div class="form-group form-objDesc">
+                  <label for="name">Chi tiết đối tượng khác:</label>
+                  <input type="text" id="name" class="form-control" placeholder="Đối tượng khác(ghi rõ)">
+                </div>
+              </div>  
             </div>
         </div>
             </form>
@@ -848,9 +862,22 @@
 
 <script src="vendor/js/library/bootstrap-datepicker.min.js"></script>
 <script src="vendor/js/create-account--new.js"></script>
+<script type="module" src="vendor/js/form-CRUD/main.js"></script>
+<script>
+     $('#priority-object').select2();
+     let selectedValues = [];
+     $('#priority-object').on('change', function() {
+    // Lấy các giá trị đã chọn từ select2
+    selectedValues = $(this).val() || [];  // Nếu không có lựa chọn nào, trả về mảng rỗng
+  
+    // Kiểm tra xem tùy chọn "Khác" (giá trị "5") có được chọn không
+    if (selectedValues.includes("5")) {
+      $('.form-objDesc').addClass('show');  // Hiển thị phần nhập chi tiết
+    } else {
+      $('.form-objDesc').removeClass('show');  // Ẩn phần nhập chi tiết
+    }
 
-<script type="module" src="vendor/js/form-CRUD/form-lang/formLang.js"></script>
-<script type="module" src="vendor/js/form-CRUD/form-level/formLevel.js"></script>
-<script type="module" src="vendor/js/form-CRUD/form-IT/formIT.js"></script>
-<script type="module" src="vendor/js/form-CRUD/form-experience/formEXP.js"></script>
+    console.log(selectedValues); // In ra mảng các giá trị đã chọn
+  });
+</script>
 </html>

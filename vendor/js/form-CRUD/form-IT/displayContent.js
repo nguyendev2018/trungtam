@@ -20,8 +20,10 @@ export function displayContentIT(blockId, blockIT, arrayIT, selectedAbility) {
             <p class="job-title">Trình độ : ${item.TrinhDoTH_ID}</p>
             <p class="job-specialized">Khả năng sử dụng: ${item.KhaNangSuDung}</p>
           </div>
+          <div class="item-job--icon">
           <i class='bi bi-pencil-square' title="Sửa thông tin"></i>
           <i class="bi bi-trash3-fill" title="Xóa trình độ ngoại ngữ"></i>
+          </div>
         </li>
       </ul>
     `;

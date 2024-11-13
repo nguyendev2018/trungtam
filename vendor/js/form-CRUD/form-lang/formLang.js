@@ -9,9 +9,11 @@ export function controlAddLang(blockLang, arrayLang, selectedAbility) {
   idLang++;
   displayForm(blockLang, idLang, arrayLang, selectedAbility);
 }
-document
-  .querySelector(".control-addLang")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    controlAddLang(blockLang, arrayLang, selectedAbility);
-  });
+export function initializeFormLang() {
+  document
+    .querySelector(".control-addLang")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      controlAddLang(blockLang, arrayLang, selectedAbility);
+    });
+}

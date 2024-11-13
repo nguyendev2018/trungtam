@@ -9,9 +9,12 @@ export function controlAddLevel(blockLevel, arrayLevel, selectedAbility) {
   idLevel++;
   displayForm(blockLevel, idLevel, arrayLevel, selectedAbility);
 }
-document
+export function initializeFormLevel() {
+  document
   .querySelector(".control-addLevel")
   .addEventListener("click", function (e) {
     e.preventDefault();
     controlAddLevel(blockLevel, arrayLevel, selectedAbility);
   });
+}
+

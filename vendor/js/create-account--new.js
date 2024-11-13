@@ -121,15 +121,32 @@ function renderCityForTT(data) {
 }
 // Hàm Kỹ năng mềm
 const itemSoft = document.querySelectorAll('.block-soft .item');
+let arraySoft = [];
 itemSoft.forEach(element => {
   element.addEventListener('click',function(e) {
     element.classList.toggle('active');
+    const value = element.textContent.trim();
+    if(element.classList.contains('active')){
+      arraySoft.push(value);
+    }else {
+      arraySoft = arraySoft.filter(item => item !== value)
+    }
+    console.log(arraySoft);
+    
   })
 });
 // Hàm đăng ký dịch vụ
 const itemService = document.querySelectorAll('.block-service .item');
+let arrayService = [];
 itemService.forEach(element =>{
   element.addEventListener('click',function(e) {
     element.classList.toggle('active');
+    const value = element.textContent.trim();
+    if(element.classList.contains('active')){
+      arrayService.push(value);
+    }else {
+      arrayService = arrayService.filter(item => item !== value);
+    }
+    console.log(arrayService);
   })
 })
